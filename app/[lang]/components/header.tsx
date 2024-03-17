@@ -84,12 +84,14 @@ const HeaderComponent = ({ dictionary }: any) => {
   }
 
   const scrollToView = (id: string) => {
-    const element = document?.getElementById(id);
-    console.log(element);
-    if (element?.scrollIntoView) {
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
+    if (typeof document !== "undefined") {
+      const element = document?.getElementById(id);
+      console.log(element);
+      if (element?.scrollIntoView) {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
     }
   };
 
