@@ -16,7 +16,7 @@ const ServicesComponent = () => {
       <p className="text-[#FF375F] text-center font-semibold">
         What's Happening
       </p>
-      <div className="max-w-[650px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
+      <div className="max-w-[800px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
         We're Providing Best Services To Our Customers
       </div>
       <div className="relative mt-5 xl:mt-10">

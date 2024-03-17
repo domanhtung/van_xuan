@@ -14,7 +14,7 @@ const BlogNews = () => {
           <p className="text-[#FF375F] text-center font-semibold">
             Blog & News
           </p>
-          <div className="max-w-[650px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
+          <div className="max-w-[800px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
             Read Our Latest News & Articles
           </div>
           <div className="grid lg:grid-cols-3 gap-6 mt-6">

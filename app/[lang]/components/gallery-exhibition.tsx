@@ -23,7 +23,7 @@ const GalleryExhibition = () => {
       <p className="text-[#FF375F] text-center font-semibold">
         Gallery Exhibitionr
       </p>
-      <div className="max-w-[650px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
+      <div className="max-w-[800px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
         Discover Your Health & Recovery Works For Our Medical Clinic
       </div>
       <div className="my-swiper">

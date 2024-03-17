@@ -18,7 +18,7 @@ const Testimonials = () => {
   return (
     <div className="container mt-20 xl:mt-40 mx-auto px-5 text-[14px] xl:text-[16px]">
       <p className="text-[#FF375F] text-center font-semibold">Testimonials</p>
-      <div className="max-w-[650px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
+      <div className="max-w-[800px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
         Read Our Medical Clinic Clients Reviews Discovered For You
       </div>
       <div className="mt-5 xl:mt-10 my-swiper">
