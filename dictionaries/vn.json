@@ -1,0 +1,20 @@
+{
+  "header": {
+    "openTime": "Thứ Hai - Thứ Sáu: 08:00 - 17:00",
+    "language": {
+      "en": "Tiếng Anh",
+      "vn": "Tiếng Việt"
+    },
+    "navName": {
+      "home": "Trang chủ",
+      "about": "về chúng tôi",
+      "services": "Dịch vụ",
+      "gallery": "Trưng bày",
+      "doctor": "Bác sĩ",
+      "pricing": "Giá",
+      "blog": "Tin tức",
+      "contact": "Liên hệ"
+    },
+    "getQuote": "Báo giá miễn phí"
+  }
+}

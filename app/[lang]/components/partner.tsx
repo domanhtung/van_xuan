@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const PartnerComponent = () => {
   return (
-    <div className="container mt-40 mx-auto">
+    <div className="container mt-20 xl:mt-40 mx-auto px-5 text-[14px] xl:text-[16px]">
       <p className="text-[#FF375F] text-center font-semibold">Our Partner</p>
-      <div className="max-w-[650px] mx-auto text-[44px] font-bold text-[#002856] text-center">
+      <div className="max-w-[650px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
         Our Trusted Partner
       </div>
       <div className="flex gap-5 mt-5 justify-center flex-wrap">

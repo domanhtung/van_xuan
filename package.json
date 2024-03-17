@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "0.2.32",
+    "aos": "^2.3.4",
     "clsx": "^2.1.0",
     "google-map-react": "^2.2.1",
     "negotiator": "0.6.3",
@@ -17,6 +18,7 @@
     "swiper": "^11.0.7"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/google-map-react": "^2.1.10",
     "@types/negotiator": "0.6.1",
     "@types/node": "^18.11.5",

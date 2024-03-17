@@ -3,7 +3,7 @@ import ImgSubscribe from "../../../public/Images/subscribe.png";
 
 const SubScribeComponent = () => {
   return (
-    <div className="relative mt-40">
+    <div className="relative mt-20 xl:mt-40 text-[14px] xl:text-[16px]">
       <Image
         src={ImgSubscribe}
         className="w-full h-[310px] object-cover"
@@ -12,7 +12,7 @@ const SubScribeComponent = () => {
         priority
         alt="subscribe"
       />
-      <div className="absolute w-[570px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+      <div className="absolute w-full md:w-[570px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
         <input
           className="input-subscribe placeholder-white text-[14px]"
           placeholder="Enter your Email Address"

@@ -36,3 +36,8 @@ export const navigations = [
   "blog",
   "contact",
 ];
+
+export const localeName = {
+  en: "English",
+  vn: "Vietnamese",
+};

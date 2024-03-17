@@ -1,9 +1,20 @@
 {
-  "server-component": {
-    "welcome": "Welcome"
-  },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+  "header": {
+    "openTime": "Mon - Fri: 08:00 am - 05:00 pm",
+    "language": {
+      "en": "English",
+      "vn": "Vietnamese"
+    },
+    "navName": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "gallery": "Gallery",
+      "doctor": "Doctor",
+      "pricing": "Pricing",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "getQuote": "Get Free Quote"
   }
 }

@@ -16,17 +16,31 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="container mt-40 mx-auto">
+    <div className="container mt-20 xl:mt-40 mx-auto px-5 text-[14px] xl:text-[16px]">
       <p className="text-[#FF375F] text-center font-semibold">Testimonials</p>
-      <div className="max-w-[650px] mx-auto text-[44px] font-bold text-[#002856] text-center">
+      <div className="max-w-[650px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
         Read Our Medical Clinic Clients Reviews Discovered For You
       </div>
-      <div className="mt-10 my-swiper">
+      <div className="mt-5 xl:mt-10 my-swiper">
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
+          slidesPerView={1}
+          spaceBetween={20}
           pagination={pagination}
           modules={[Pagination]}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          }}
         >
           {testimonials?.map((content, index: number) => {
             return (
@@ -54,7 +68,7 @@ const Testimonials = () => {
                     </div>
                     <div className="px-5 mt-3">
                       <p className="text-[#666666]">{content?.comment}</p>
-                      <p className="mt-5 text-[24px] font-bold text-[#002856]">
+                      <p className="mt-5 text-[18px] xl:text-[24px] font-bold text-[#002856]">
                         {content?.name}
                       </p>
                       <p className="text-[#666666]">{content?.job}</p>

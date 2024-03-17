@@ -22,8 +22,8 @@ export default async function IndexPage({
   const dictionary = await getDictionary(lang);
 
   return (
-    <div className="relative pt-[160px]">
-      <HeaderComponent />
+    <div className="relative xl:pt-[160px]">
+      <HeaderComponent dictionary={dictionary} />
       <BannerComponent />
       <AboutUs />
       <ServicesComponent />

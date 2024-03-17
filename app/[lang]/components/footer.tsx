@@ -12,10 +12,10 @@ import Link from "next/link";
 
 const FooterComponent = () => {
   return (
-    <div className="bg-[#002856]">
+    <div className="bg-[#002856] text-[14px] xl:text-[16px]">
       <div className="container mx-auto">
-        <div className="grid grid-cols-12 py-[120px] text-white">
-          <div className="px-3 col-span-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-12 py-10 sm:py-20 xl:py-[120px] text-white">
+          <div className="px-3 lg:col-span-4">
             <Image src={Logo} width={120} height={50} priority alt="logo" />
             <p className="mt-5">
               Lorem ipsum dolor sit amet, consec teturus adipis iscing elit
@@ -23,8 +23,8 @@ const FooterComponent = () => {
               adip iscing eliteous sedun do labor amet consec teturus.
             </p>
           </div>
-          <div className="px-3 col-span-3">
-            <div className="text-[24px] font-semibold">Contact information</div>
+          <div className="px-3 lg:col-span-3">
+            <div className="text-[18px] xl:text-[24px] font-semibold">Contact information</div>
             <div className="w-[65px] h-[2px] mt-3 bg-[#FF375F]" />
             <div className="flex gap-1 mt-6">
               <IconLocation />
@@ -39,8 +39,8 @@ const FooterComponent = () => {
               info@duch.com
             </div>
           </div>
-          <div className="px-3 col-span-2">
-            <div className="text-[24px] font-semibold">Quick Links</div>
+          <div className="px-3 lg:col-span-2">
+            <div className="text-[18px] xl:text-[24px] font-semibold">Quick Links</div>
             <div className="w-[65px] h-[2px] mt-3 bg-[#FF375F]" />
             <div className="flex gap-1 mt-4 items-center list-footer">
               <IconList /> About Us
@@ -55,23 +55,23 @@ const FooterComponent = () => {
               <IconList /> Privacy Policy
             </div>
           </div>
-          <div className="px-3 col-span-3">
-            <div className="text-[24px] font-semibold">
+          <div className="px-3 lg:col-span-3">
+            <div className="text-[18px] xl:text-[24px] font-semibold">
               Subscribe Newsletter
             </div>
             <div className="w-[65px] h-[2px] mt-3 bg-[#FF375F]" />
-            <input className="input-normal mt-3" placeholder="Your Email" />
+            <input className="input-normal h-[45px] mt-3" placeholder="Your Email" />
             <button className="btn style3 w-full mt-4">Subscribe Now</button>
           </div>
         </div>
-        <div className="h-[70px] border-t border-white border-opacity-10">
-          <div className="flex h-full justify-between items-center">
+        <div className="sm:h-[70px] py-5 border-t border-white border-opacity-10">
+          <div className="grid sm:flex h-full justify-center gap-3 sm:justify-between items-center">
             <div className="flex items-center gap-1 text-white">
               <IconCopyright />
               Duch. All Rights Reserved By
               <span>HiBootstrap</span>
             </div>
-            <div className="flex gap-2 items-center text-white">
+            <div className="flex gap-2 items-center justify-center sm:justify-start text-white">
               Follow Us On:
               {listSocial?.map((social) => {
                 return (

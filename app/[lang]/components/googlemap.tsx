@@ -25,7 +25,7 @@ export default function SimpleMap() {
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: "500px", width: "100%" }}>
+    <div style={{ height: "500px" }} className="overflow-hidden">
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyDNFiZ-WcWD33mGmLWRSim6mclkL-8Xb9c" }}
         defaultCenter={defaultProps.center}
