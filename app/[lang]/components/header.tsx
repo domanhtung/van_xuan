@@ -5,7 +5,7 @@ import openTime from "../../../public/Images/open_time.svg";
 import language from "../../../public/Images/language.svg";
 import logo from "../../../public/Images/logo.png";
 import Link from "next/link";
-import { listSocial, localeName, navigations } from "../constants/header";
+import { listSocial, navigations } from "../constants/header";
 import { useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { usePathname, useRouter } from "next/navigation";

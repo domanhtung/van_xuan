@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { contacts } from "../constants/contact";
 import clsx from "clsx";
 import { IconHideQuest, IconShowQuest } from "./icons/icon-quest";
@@ -10,7 +10,11 @@ import { navigations } from "../constants/header";
 
 const ContactComponent = () => {
   const [selectedQuestion, setSelectedQuestion] = useState<number>();
-  AOS.init();
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      AOS.init();
+    }
+  }, []);
 
   return (
     <div
