@@ -24,7 +24,9 @@ const FooterComponent = () => {
             </p>
           </div>
           <div className="px-3 lg:col-span-3">
-            <div className="text-[18px] xl:text-[24px] font-semibold">Contact information</div>
+            <div className="text-[18px] xl:text-[24px] font-semibold">
+              Contact information
+            </div>
             <div className="w-[65px] h-[2px] mt-3 bg-[#FF375F]" />
             <div className="flex gap-1 mt-6">
               <IconLocation />
@@ -40,7 +42,9 @@ const FooterComponent = () => {
             </div>
           </div>
           <div className="px-3 lg:col-span-2">
-            <div className="text-[18px] xl:text-[24px] font-semibold">Quick Links</div>
+            <div className="text-[18px] xl:text-[24px] font-semibold">
+              Quick Links
+            </div>
             <div className="w-[65px] h-[2px] mt-3 bg-[#FF375F]" />
             <div className="flex gap-1 mt-4 items-center list-footer">
               <IconList /> About Us
@@ -60,7 +64,10 @@ const FooterComponent = () => {
               Subscribe Newsletter
             </div>
             <div className="w-[65px] h-[2px] mt-3 bg-[#FF375F]" />
-            <input className="input-normal h-[45px] mt-3" placeholder="Your Email" />
+            <input
+              className="input-normal h-[45px] lg:h-[55px] mt-3"
+              placeholder="Your Email"
+            />
             <button className="btn style3 w-full mt-4">Subscribe Now</button>
           </div>
         </div>

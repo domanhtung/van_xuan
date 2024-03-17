@@ -1,6 +1,6 @@
 import blog1 from "../../../public/Images/blog_1.jpg";
 import blog2 from "../../../public/Images/blog_2.jpg";
-import blog3 from "../../../public/Images/blog_3.jpg";
+import blog3 from "../../../public/Images/blog_3.png";
 
 export const blogsPreview = [
   {
