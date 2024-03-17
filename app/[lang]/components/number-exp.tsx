@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import ImgNumberExp from "../../../public/Images/number_exp.png";
 import { navigations } from "../constants/header";

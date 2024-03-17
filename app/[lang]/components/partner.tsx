@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { partners } from "../constants/partner";
 import Link from "next/link";

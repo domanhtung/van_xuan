@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import banner from "../../../public/Images/banner.png";
 import { bannerContents } from "../constants/banner";
