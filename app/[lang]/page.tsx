@@ -23,7 +23,7 @@ export default async function IndexPage({
 
   return (
     <div className="relative xl:pt-[160px]">
-      <HeaderComponent dictionary={dictionary} />
+      {/* <HeaderComponent dictionary={dictionary} />
       <BannerComponent />
       <AboutUs />
       <ServicesComponent />
@@ -35,7 +35,7 @@ export default async function IndexPage({
       <ContactComponent />
       <SubScribeComponent />
       <SimpleMap />
-      <FooterComponent />
+      <FooterComponent /> */}
     </div>
   );
 }
