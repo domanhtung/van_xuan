@@ -16,9 +16,9 @@ const HeaderComponent = ({ dictionary }: any) => {
   const headerRef = useRef<any>();
   const stickyRef = useRef<any>();
   const scrollTopRef = useRef<any>();
+  const mobileNavRef = useRef<any>();
   const router = useRouter();
   const pathName = usePathname();
-  const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
   const redirectedPathName = (locale: Locale | string) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
@@ -93,6 +93,29 @@ const HeaderComponent = ({ dictionary }: any) => {
       } else {
         router?.push("/");
       }
+    }
+  };
+
+  useEffect(() => {
+    if (mobileNavRef?.current) {
+      mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
+    }
+  }, []);
+
+  const showMobileNav = () => {
+    if (mobileNavRef?.current) {
+      if (mobileNavRef.current.style.marginTop === "0px") {
+        mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
+      } else {
+        mobileNavRef.current.style.marginTop = "0px";
+      }
+    }
+  };
+
+  const selectNavBar = (nav: string) => {
+    scrollToView(nav);
+    if (mobileNavRef?.current) {
+      mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
     }
   };
 
@@ -217,7 +240,7 @@ const HeaderComponent = ({ dictionary }: any) => {
               </button>
               <button
                 className="grid lg:hidden gap-1 p-2 border border-[#002856] rounded-[5px]"
-                onClick={() => setShowMobileNav(!showMobileNav)}
+                onClick={() => showMobileNav()}
               >
                 {[...Array(3)]?.map((_, index: number) => {
                   return (
@@ -231,10 +254,8 @@ const HeaderComponent = ({ dictionary }: any) => {
             </div>
           </div>
           <div
-            className={clsx(
-              "overflow-hidden z-0 duration-500 bg-white shadow-xl h-full",
-              showMobileNav ? "mobile-menu-show" : "mobile-menu-hide"
-            )}
+            ref={mobileNavRef}
+            className="overflow-hidden z-0 duration-500 bg-white shadow-xl h-full mt-[-200%]"
           >
             <div className="container mx-auto">
               <ul className="grid lg:hidden px-5 py-5 gap-5 xl:gap-10 items-center">
@@ -243,10 +264,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                     <span
                       className="capitalize font-semibold text-[#002856] cursor-pointer"
                       key={nav}
-                      onClick={() => {
-                        scrollToView(nav);
-                        setShowMobileNav(false);
-                      }}
+                      onClick={() => selectNavBar(nav)}
                     >
                       {dictionary?.header?.navName?.[nav]}
                     </span>
