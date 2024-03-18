@@ -97,7 +97,9 @@ const HeaderComponent = ({ dictionary }: any) => {
   };
 
   useEffect(() => {
-    if (mobileNavRef?.current) {
+    if (typeof window !== "undefined" && window?.outerWidth >= 1024) {
+      return;
+    } else if (mobileNavRef?.current) {
       mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
     }
   }, []);
