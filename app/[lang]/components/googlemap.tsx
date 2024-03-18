@@ -2,6 +2,10 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 
+interface Props {
+  mapKey: string;
+}
+
 const AnyReactComponent = ({ text }: any) => (
   <svg
     width="30"
@@ -17,7 +21,7 @@ const AnyReactComponent = ({ text }: any) => (
   </svg>
 );
 
-export default function SimpleMap() {
+export default function SimpleMap({ mapKey }: Props) {
   const defaultProps = {
     center: { lat: 59.95, lng: 30.33 },
     zoom: 11,
@@ -27,8 +31,8 @@ export default function SimpleMap() {
     // Important! Always set the container height explicitly
     <div style={{ height: "500px" }} className="overflow-hidden">
       <GoogleMapReact
-        bootstrapURLKeys={{ 
-          key: "AIzaSyDNFiZ-WcWD33mGmLWRSim6mclkL-8Xb9c" 
+        bootstrapURLKeys={{
+          key: mapKey,
         }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}

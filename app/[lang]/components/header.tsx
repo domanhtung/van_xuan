@@ -86,11 +86,12 @@ const HeaderComponent = ({ dictionary }: any) => {
   const scrollToView = (id: string) => {
     if (typeof document !== "undefined") {
       const element = document?.getElementById(id);
-      console.log(element);
       if (element?.scrollIntoView) {
         element.scrollIntoView({
           behavior: "smooth",
         });
+      } else {
+        router?.push("/");
       }
     }
   };
@@ -188,14 +189,16 @@ const HeaderComponent = ({ dictionary }: any) => {
             )}
           >
             <div className="flex container mx-auto px-5 py-3 items-center justify-between">
-              <Image
-                src={logo}
-                className="w-[100px] lg:w-[120px] h-[40px] lg:h-[50px]"
-                width={120}
-                height={50}
-                priority
-                alt="logo"
-              />
+              <Link href={"/"}>
+                <Image
+                  src={logo}
+                  className="w-[100px] lg:w-[120px] h-[40px] lg:h-[50px]"
+                  width={120}
+                  height={50}
+                  priority
+                  alt="logo"
+                />
+              </Link>
               <ul className="hidden lg:flex gap-5 xl:gap-10 items-center">
                 {navigations?.map((nav: string) => {
                   return (
