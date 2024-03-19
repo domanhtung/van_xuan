@@ -26,7 +26,7 @@ const FooterComponent = () => {
                 alt="logo"
               />
             </Link>
-            <p className="mt-5">
+            <p className="mt-10">
               Van Xuan Pharmaceuticals is Your Reliable Distributor for
               Essential Medications. Ensuring precision and efficiency in
               pharmaceutical distribution for individuals and healthcare
@@ -39,16 +39,22 @@ const FooterComponent = () => {
             </div>
             <div className="w-[65px] h-[2px] mt-3 bg-[#FF375F]" />
             <div className="flex gap-1 mt-6">
-              <IconLocation />
+              <div className="min-w-[18px]">
+                <IconLocation />
+              </div>
               Shophouse 2B, 1st floor Green Pearl Mega Mall, No 378, Minh Khai
               Road, Hai Ba Trung District, Hanoi, Vietnam
             </div>
             <div className="flex gap-1 mt-3">
-              <IconSupport />
+              <div className="min-w-[18px]">
+                <IconSupport />
+              </div>
               +258-456-8790
             </div>
             <div className="flex gap-1 mt-3">
-              <IconMail />
+              <div className="min-w-[18px]">
+                <IconMail />
+              </div>
               info@duch.com
             </div>
           </div>
