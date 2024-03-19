@@ -449,8 +449,6 @@ textarea {
   height: 100%;
   background: #fff;
   z-index: 20000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,34 +470,34 @@ textarea {
 
 .loader-inner-1 {
   animation-delay: 0.2s;
-  animation: change_first_circle 4s ease-in-out infinite;
+  animation: changeFirstCircle 4s ease-in-out infinite;
 }
 
 .loader-inner-2 {
   animation-delay: 0.2s;
-  animation: change_second_circle 4s ease-in-out infinite;
+  animation: changeSecondCircle 4s ease-in-out infinite;
 }
 
 .loader-inner-3 {
   animation-delay: 0.2s;
   width: 40px;
   height: 40px;
-  animation: change_last_circle 4s linear infinite;
+  animation: changeLastCircle 4s linear infinite;
 }
 
-@keyframes change_first_circle {
+@keyframes changeFirstCircle {
   50% {
     transform: rotateX(360deg) scale(0.8);
   }
 }
 
-@keyframes change_second_circle {
+@keyframes changeSecondCircle {
   50% {
     transform: rotateY(360deg) scale(0.8);
   }
 }
 
-@keyframes change_last_circle {
+@keyframes changeLastCircle {
   50% {
     transform: rotateX(360deg) scale(0.8);
   }
@@ -507,13 +505,14 @@ textarea {
 
 .animation-loading-end {
   opacity: 1;
-  animation: loading_end 0.6s linear;
+  animation: loadingEnd 0.6s linear;
 }
-@keyframes loading_end {
-  0%: {
+
+@keyframes loadingEnd {
+  from {
     opacity: 1;
   }
-  100% {
+  to {
     opacity: 0;
   }
 }
