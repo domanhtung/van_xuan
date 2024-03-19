@@ -42,7 +42,7 @@ export const metadata = {
     siteName: "Next.js",
     images: [
       {
-        url: "https://van-xuan-ep43eunyp-domanhtungs-projects.vercel.app/Images/thumbnail.png",
+        url: "/Images/thumbnail.png",
       },
     ],
     locale: "en_US",
