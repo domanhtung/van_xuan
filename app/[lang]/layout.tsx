@@ -33,6 +33,7 @@ export default async function Root({
 }
 
 export const metadata = {
+  title: "Varphaco",
   openGraph: {
     title: "Varphaco",
     description:
@@ -41,7 +42,7 @@ export const metadata = {
     siteName: "Next.js",
     images: [
       {
-        url: "/Images/thumbnail.png",
+        url: "https://van-xuan-ep43eunyp-domanhtungs-projects.vercel.app/Images/thumbnail.png",
       },
     ],
     locale: "en_US",
