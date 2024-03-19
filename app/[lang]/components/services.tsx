@@ -56,7 +56,12 @@ const ServicesComponent = () => {
                   alt="service"
                 />
                 <div className="relative h-[128px]">
-                  <div className="absolute w-[90%] left-1/2 bottom-0 p-5 -translate-x-1/2 bg-white shadow-xl">
+                  <div
+                    className={clsx(
+                      "absolute w-[90%] md:h-[200px] left-1/2 bottom-0 p-5 -translate-x-1/2 bg-white shadow-xl cursor-pointer duration-150",
+                      "hover:scale-105 hover:translate-y-[-20px]"
+                    )}
+                  >
                     <div className="flex gap-3 items-center">
                       <div className="service-icon flex w-[60px] xl:w-[70px] h-[60px] xl:h-[70px] min-w-[60px] xl:min-w-[70px] group items-center justify-center">
                         {content?.icon}

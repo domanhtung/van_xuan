@@ -16,7 +16,7 @@ export const aboutServe = [
   {
     idx: 2,
     tab: "How we serve",
-    img: ImgAbout3,
+    img: ImgAbout2,
     title: "Serving You with Dedication",
     contents: [
       "Embracing a customer-centric approach, we prioritize your needs and preferences at every step. From personalized service to tailored solutions, we're dedicated to ensuring your satisfaction.",
@@ -27,7 +27,7 @@ export const aboutServe = [
   {
     idx: 3,
     tab: "Our Customer Champions",
-    img: ImgAbout4,
+    img: ImgAbout2,
     title: "Your Success is Our Priority",
     contents: [
       "We're more than just a company – we're your dedicated allies, always advocating for your needs and interests to ensure your success.",

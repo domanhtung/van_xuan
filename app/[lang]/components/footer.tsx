@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Logo from "../../../public/Images/logo_white.png";
+import Logo from "../../../public/Images/logo.png";
 import {
   IconCopyright,
   IconList,
@@ -8,8 +8,6 @@ import {
   IconMail,
   IconSupport,
 } from "../constants/footer";
-import { listSocial } from "../constants/header";
-import Link from "next/link";
 
 const FooterComponent = () => {
   return (
@@ -17,11 +15,19 @@ const FooterComponent = () => {
       <div className="container mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-12 py-10 sm:py-20 xl:py-[120px] text-white">
           <div className="px-3 lg:col-span-4">
-            <Image src={Logo} width={120} height={50} priority alt="logo" />
+            <Image
+              src={Logo}
+              className="w-[100px] lg:w-[157px] h-[24px] lg:h-[36px]"
+              width={157}
+              height={36}
+              priority
+              alt="logo"
+            />
             <p className="mt-5">
-              Lorem ipsum dolor sit amet, consec teturus adipis iscing elit
-              eiusmod tempor incidunt labore dolore magna ali qiaus consec tetur
-              adip iscing eliteous sedun do labor amet consec teturus.
+              Van Xuan Pharmaceuticals is Your Reliable Distributor for
+              Essential Medications. Ensuring precision and efficiency in
+              pharmaceutical distribution for individuals and healthcare
+              providers
             </p>
           </div>
           <div className="px-3 lg:col-span-3">
@@ -31,7 +37,8 @@ const FooterComponent = () => {
             <div className="w-[65px] h-[2px] mt-3 bg-[#FF375F]" />
             <div className="flex gap-1 mt-6">
               <IconLocation />
-              2767 Sunrise Street, Jhones Ave 102, New York, USA
+              Shophouse 2B, 1st floor Green Pearl Mega Mall, No 378, Minh Khai
+              Road, Hai Ba Trung District, Hanoi, Vietnam
             </div>
             <div className="flex gap-1 mt-3">
               <IconSupport />
