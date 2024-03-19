@@ -26,15 +26,23 @@ export const listSocial = [
   },
 ];
 
+export const navigationsObj = {
+  home: "home",
+  services: "services",
+  about: "about",
+  blog: "blog",
+  contact: "contact",
+  gallery: "gallery",
+  doctor: "doctor",
+  pricing: "pricing",
+};
+
 export const navigations = [
-  "home",
-  "services",
-  "about",
-  // "gallery",
-  // "doctor",
-  // "pricing",
-  "blog",
-  "contact",
+  navigationsObj.home,
+  navigationsObj.services,
+  navigationsObj.about,
+  navigationsObj.blog,
+  navigationsObj.contact,
 ];
 
 export const localeName = {

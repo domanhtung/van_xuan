@@ -2,11 +2,12 @@
 import Image from "next/image";
 import banner from "../../../public/Images/banner.png";
 import { bannerContents } from "../constants/banner";
-import { navigations } from "../constants/header";
+import { navigationsObj } from "../constants/header";
+import { scrollToView } from "../utils";
 
 const BannerComponent = () => {
   return (
-    <div id={navigations[0]}>
+    <div id={navigationsObj.home}>
       <Image
         src={banner}
         className="w-full h-[630px] lg:h-[730px] object-cover"
@@ -31,7 +32,10 @@ const BannerComponent = () => {
               <button className="btn w-full sm:w-auto style2">
                 Book An Appointment
               </button>
-              <button className="btn w-full sm:w-auto mt-2 sm:mt-0 style0">
+              <button
+                className="btn w-full sm:w-auto mt-2 sm:mt-0 style0"
+                onClick={() => scrollToView(navigationsObj.about)}
+              >
                 More About Us
               </button>
             </div>

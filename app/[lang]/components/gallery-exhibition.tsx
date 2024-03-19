@@ -1,5 +1,5 @@
 "use client";
-import { navigations } from "../constants/header";
+import { navigations, navigationsObj } from "../constants/header";
 import imgCategory1 from "../../../public/Images/category_1.png";
 import imgCategory2 from "../../../public/Images/category_2.png";
 import imgCategory3 from "../../../public/Images/category_3.png";
@@ -7,6 +7,7 @@ import imgCategory4 from "../../../public/Images/category_4.png";
 import imgCategory5 from "../../../public/Images/category_5.png";
 import imgCategory6 from "../../../public/Images/category_6.png";
 import Image from "next/image";
+import { scrollToView } from "../utils";
 
 const categories = [
   {
@@ -40,17 +41,6 @@ const categories = [
     product: "50++",
   },
 ];
-
-const scrollToView = (id: string) => {
-  if (typeof document !== "undefined") {
-    const element = document?.getElementById(id);
-    if (element?.scrollIntoView) {
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-  }
-};
 
 const GalleryExhibition = () => {
   return (
@@ -93,7 +83,7 @@ const GalleryExhibition = () => {
           <div className="flex py-3 lg:pb-5 lg:py-10 justify-end">
             <button
               className="btn style1"
-              onClick={() => scrollToView("contact")}
+              onClick={() => scrollToView(navigationsObj.contact)}
             >
               Discover more
             </button>

@@ -5,14 +5,14 @@ import IconChecked from "../../../public/Images/checked.svg";
 import { aboutServe } from "../constants/about";
 import { useState } from "react";
 import clsx from "clsx";
-import { navigations } from "../constants/header";
+import { navigationsObj } from "../constants/header";
 
 const AboutUs = () => {
   const [tab, setTab] = useState<number>(1);
 
   return (
     <div
-      id={navigations[2]}
+      id={navigationsObj.about}
       className="grid container mx-auto px-5 pt-20 xl:pt-40 gap-5 xl:gap-20 lg:grid-cols-2 text-[14px] xl:text-[16px]"
     >
       <div>

@@ -5,12 +5,12 @@ import { IconArrowRight, serviceContents } from "../constants/services";
 import Image from "next/image";
 import { Navigation } from "swiper/modules";
 import { clsx } from "clsx";
-import { navigations } from "../constants/header";
+import { navigationsObj } from "../constants/header";
 
 const ServicesComponent = () => {
   return (
     <div
-      id={navigations[1]}
+      id={navigationsObj.services}
       className="container pt-20 px-5 xl:pt-40 mx-auto text-[14px] xl:text-[16px]"
     >
       <p className="text-[#FF375F] text-center font-semibold">

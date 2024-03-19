@@ -4,11 +4,11 @@ import { blogsPreview } from "../constants/blogs";
 import ImgAddBlog from "../../../public/Images/add_blog.svg";
 import ImgCommentBlog from "../../../public/Images/comment_blog.svg";
 import { useMemo } from "react";
-import { navigations } from "../constants/header";
+import { navigationsObj } from "../constants/header";
 
 const BlogNews = () => {
   return (
-    <div id={navigations[3]} className="pt-20 xl:pt-40">
+    <div id={navigationsObj.blog} className="pt-20 xl:pt-40">
       <div className="py-10 xl:py-20 px-5 bg-[#F9F9F9] text-[14px] xl:text-[16px]">
         <div className="container mx-auto">
           <p className="text-[#FF375F] text-center font-semibold">

@@ -8,7 +8,5 @@ export async function GET(req: NextRequest, res: NextResponse) {
     // const movies = await db.collection("user").find({}).limit(10).toArray();
     // return NextResponse.json(movies || {}, { status: 200 });
     return NextResponse.json({}, { status: 200 });
-  } catch (e) {
-    console.error(e);
-  }
+  } catch (e) {}
 }

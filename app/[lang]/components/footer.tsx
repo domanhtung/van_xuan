@@ -8,6 +8,7 @@ import {
   IconMail,
   IconSupport,
 } from "../constants/footer";
+import Link from "next/link";
 
 const FooterComponent = () => {
   return (
@@ -15,14 +16,16 @@ const FooterComponent = () => {
       <div className="container mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-12 py-10 sm:py-20 xl:py-[120px] text-white">
           <div className="px-3 lg:col-span-4">
-            <Image
-              src={Logo}
-              className="w-[100px] lg:w-[157px] h-[24px] lg:h-[36px]"
-              width={157}
-              height={36}
-              priority
-              alt="logo"
-            />
+            <Link href={"/"}>
+              <Image
+                src={Logo}
+                className="w-[100px] lg:w-[157px] h-[24px] lg:h-[36px]"
+                width={157}
+                height={36}
+                priority
+                alt="logo"
+              />
+            </Link>
             <p className="mt-5">
               Van Xuan Pharmaceuticals is Your Reliable Distributor for
               Essential Medications. Ensuring precision and efficiency in

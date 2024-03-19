@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { IconHideQuest, IconShowQuest } from "./icons/icon-quest";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { navigations } from "../constants/header";
+import { navigationsObj } from "../constants/header";
 
 const ContactComponent = () => {
   const [selectedQuestion, setSelectedQuestion] = useState<number>();
@@ -18,7 +18,7 @@ const ContactComponent = () => {
 
   return (
     <div
-      id={navigations[4]}
+      id={navigationsObj.contact}
       className="container grid lg:grid-cols-2 pt-20 xl:pt-40 mx-auto px-5 overflow-hidden text-[14px] xl:text-[16px]"
     >
       <div data-aos="fade-right" className="lg:pr-10">

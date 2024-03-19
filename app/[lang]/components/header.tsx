@@ -5,12 +5,13 @@ import openTime from "../../../public/Images/open_time.svg";
 import language from "../../../public/Images/language.svg";
 import logo from "../../../public/Images/logo.png";
 import Link from "next/link";
-import { listSocial, navigations } from "../constants/header";
+import { listSocial, navigations, navigationsObj } from "../constants/header";
 import { useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { usePathname, useRouter } from "next/navigation";
 import { i18n, type Locale } from "../../../i18n-config";
 import { IconScrollUp } from "../constants/footer";
+import { scrollToView } from "../utils";
 
 const HeaderComponent = ({ dictionary }: any) => {
   const headerRef = useRef<any>();
@@ -19,7 +20,7 @@ const HeaderComponent = ({ dictionary }: any) => {
   const mobileNavRef = useRef<any>();
   const router = useRouter();
   const pathName = usePathname();
-  const [isShowNavbar, setIsShowNavbar] = useState<boolean>(false)
+  const [isShowNavbar, setIsShowNavbar] = useState<boolean>(false);
   const redirectedPathName = (locale: Locale | string) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
@@ -84,19 +85,6 @@ const HeaderComponent = ({ dictionary }: any) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  const scrollToView = (id: string) => {
-    if (typeof document !== "undefined") {
-      const element = document?.getElementById(id);
-      if (element?.scrollIntoView) {
-        element.scrollIntoView({
-          behavior: "smooth",
-        });
-      } else {
-        router?.push("/");
-      }
-    }
-  };
-
   useEffect(() => {
     if (typeof window !== "undefined" && window?.outerWidth >= 1024) {
       return;
@@ -109,7 +97,7 @@ const HeaderComponent = ({ dictionary }: any) => {
     if (mobileNavRef?.current) {
       if (mobileNavRef.current.style.marginTop === "0px") {
         mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
-        setIsShowNavbar(false)
+        setIsShowNavbar(false);
       } else {
         mobileNavRef.current.style.marginTop = "0px";
         setIsShowNavbar(true);
@@ -118,7 +106,7 @@ const HeaderComponent = ({ dictionary }: any) => {
   };
 
   const selectNavBar = (nav: string) => {
-    scrollToView(nav);
+    scrollToView(nav, router);
     if (mobileNavRef?.current) {
       mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
     }
@@ -233,7 +221,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                     <span
                       className="capitalize font-semibold text-[#002856] cursor-pointer"
                       key={nav}
-                      onClick={() => scrollToView(nav)}
+                      onClick={() => scrollToView(nav, router)}
                     >
                       {dictionary?.header?.navName?.[nav]}
                     </span>
@@ -242,7 +230,7 @@ const HeaderComponent = ({ dictionary }: any) => {
               </ul>
               <button
                 className="btn hidden lg:block style1 text-[14px]"
-                onClick={() => scrollToView("contact")}
+                onClick={() => scrollToView(navigationsObj.contact, router)}
               >
                 {dictionary?.header?.getQuote}
               </button>
