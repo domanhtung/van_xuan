@@ -425,3 +425,18 @@ textarea {
   background-repeat: no-repeat;
   background-image: url("../../public/Images/header_blog_detail.png");
 }
+
+.fade-down {
+  animation: animationFadeDown 1.5s ease-in-out;
+}
+
+@keyframes animationFadeDown {
+  from {
+    transform: translate3d(0, -100px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

@@ -136,7 +136,7 @@ const HeaderComponent = ({ dictionary }: any) => {
       >
         <div className="relative z-[1] bg-white">
           <div className="grid md:flex justify-center md:justify-start container mx-auto py-3 px-3 lg:px-5 text-[14px] items-center">
-            <div className="flex md:pr-4 md:mr-4 gap-2 items-center justify-center md:justify-start md:border-r border-black border-opacity-25">
+            <div className="hidden lg:flex md:pr-4 md:mr-4 gap-2 items-center justify-center md:justify-start md:border-r border-black border-opacity-25">
               <Image
                 src={phoneNumber}
                 width={16}
@@ -146,7 +146,7 @@ const HeaderComponent = ({ dictionary }: any) => {
               />
               (+024) 592 71 449
             </div>
-            <div className="flex gap-2 items-center justify-center md:justify-start">
+            <div className="hidden lg:flex gap-2 items-center justify-center md:justify-start">
               <Image
                 src={openTime}
                 width={16}
@@ -179,7 +179,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                   })}
                 </select>
               </div>
-              <div className="flex gap-2 lg:gap-4 pl-4 ml-4 items-center justify-center md:justify-start border-l border-black border-opacity-25">
+              {/* <div className="flex gap-2 lg:gap-4 pl-4 ml-4 items-center justify-center md:justify-start border-l border-black border-opacity-25">
                 {listSocial?.map((social) => {
                   return (
                     <Link
@@ -197,7 +197,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                     </Link>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@ const HeaderComponent = ({ dictionary }: any) => {
           </div>
           <div
             ref={mobileNavRef}
-            className="overflow-hidden z-0 duration-500 bg-white shadow-xl h-full mt-[-200%]"
+            className="overflow-hidden block lg:hidden z-0 duration-500 bg-white shadow-xl h-full mt-[-200%]"
           >
             <div className="container mx-auto">
               <ul className="grid lg:hidden px-5 py-5 gap-5 xl:gap-10 items-center">

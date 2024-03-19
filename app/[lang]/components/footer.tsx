@@ -73,13 +73,13 @@ const FooterComponent = () => {
           </div>
         </div>
         <div className="sm:h-[70px] py-5 border-t border-white border-opacity-10">
-          <div className="grid sm:flex h-full justify-center gap-3 sm:justify-between items-center">
+          <div className="grid sm:flex h-full justify-center gap-3 items-center">
             <div className="flex items-center gap-1 text-white">
               <IconCopyright />
               Duch. All Rights Reserved By
               <span>HiBootstrap</span>
             </div>
-            <div className="flex gap-2 items-center justify-center sm:justify-start text-white">
+            {/* <div className="flex gap-2 items-center justify-center sm:justify-start text-white">
               Follow Us On:
               {listSocial?.map((social) => {
                 return (
@@ -98,7 +98,7 @@ const FooterComponent = () => {
                   </Link>
                 );
               })}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
