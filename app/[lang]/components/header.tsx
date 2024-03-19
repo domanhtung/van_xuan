@@ -209,7 +209,10 @@ const HeaderComponent = ({ dictionary }: any) => {
                   );
                 })}
               </ul>
-              <button className="btn hidden lg:block style1 text-[14px]">
+              <button
+                className="btn hidden lg:block style1 text-[14px]"
+                onClick={() => scrollToView("contact")}
+              >
                 {dictionary?.header?.getQuote}
               </button>
               <button

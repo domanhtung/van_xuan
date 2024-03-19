@@ -10,7 +10,7 @@ import { navigations } from "../constants/header";
 const ServicesComponent = () => {
   return (
     <div
-      id={navigations[2]}
+      id={navigations[1]}
       className="container pt-20 px-5 xl:pt-40 mx-auto text-[14px] xl:text-[16px]"
     >
       <p className="text-[#FF375F] text-center font-semibold">

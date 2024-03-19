@@ -24,7 +24,7 @@ const contents = [
 
 const NumberExpComponent = () => {
   return (
-    <div id={navigations[4]} className="pt-20 xl:pt-40">
+    <div className="pt-20 xl:pt-40">
       <div className="relative">
         <Image
           src={ImgNumberExp}

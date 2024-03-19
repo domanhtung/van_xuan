@@ -28,11 +28,11 @@ export const listSocial = [
 
 export const navigations = [
   "home",
-  "about",
   "services",
-  "gallery",
-  "doctor",
-  "pricing",
+  "about",
+  // "gallery",
+  // "doctor",
+  // "pricing",
   "blog",
   "contact",
 ];

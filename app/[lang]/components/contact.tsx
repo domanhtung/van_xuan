@@ -18,7 +18,7 @@ const ContactComponent = () => {
 
   return (
     <div
-      id={navigations[7]}
+      id={navigations[4]}
       className="container grid lg:grid-cols-2 pt-20 xl:pt-40 mx-auto px-5 overflow-hidden text-[14px] xl:text-[16px]"
     >
       <div data-aos="fade-right" className="lg:pr-10">

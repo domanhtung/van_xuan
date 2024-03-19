@@ -16,10 +16,7 @@ const GalleryExhibition = () => {
   };
 
   return (
-    <div
-      id={navigations[3]}
-      className="container pt-20 xl:pt-40 mx-auto px-5 text-[14px] xl:text-[16px]"
-    >
+    <div className="container pt-20 xl:pt-40 mx-auto px-5 text-[14px] xl:text-[16px]">
       <p className="text-[#FF375F] text-center font-semibold">
         Gallery Exhibitionr
       </p>

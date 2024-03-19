@@ -12,7 +12,7 @@ const AboutUs = () => {
 
   return (
     <div
-      id={navigations[1]}
+      id={navigations[2]}
       className="grid container mx-auto px-5 pt-20 xl:pt-40 gap-5 xl:gap-20 lg:grid-cols-2 text-[14px] xl:text-[16px]"
     >
       <div>
