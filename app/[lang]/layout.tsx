@@ -29,6 +29,10 @@ export default async function Root({
 }
 
 export const metadata = {
-  title: "i18n within app directory - Vercel Examples",
-  description: "How to do i18n in Next.js 13 within app directory",
+  title: "Varphaco",
+  openGraph: {
+    images: ["../../public/Images/thumbnail.png"],
+  },
+  description:
+    "Van Xuan Pharmaceuticals is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
 };

@@ -217,9 +217,9 @@ const HeaderComponent = ({ dictionary }: any) => {
               <Link href={"/"}>
                 <Image
                   src={logo}
-                  className="w-[100px] lg:w-[120px] h-[40px] lg:h-[50px]"
-                  width={120}
-                  height={50}
+                  className="w-[100px] lg:w-[157px] h-[40px] lg:h-[36px]"
+                  width={157}
+                  height={36}
                   priority
                   alt="logo"
                 />
