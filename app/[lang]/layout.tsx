@@ -21,10 +21,7 @@ export default async function Root({
   return (
     <html lang={params.lang}>
       <head>
-        <meta
-          property="og:image"
-          content="../../public/Images/thumbnail.png"
-        />
+        <meta property="og:image" content="../../public/Images/thumbnail.png" />
       </head>
       <body>
         <HeaderComponent dictionary={dictionary} />
@@ -41,6 +38,18 @@ export const metadata = {
   //   images: ["../../public/Images/thumbnail.png", thumbnail],
   // },
   // metadataBase: new URL("../../public/Images/thumbnail.png"),
+  images: [
+    {
+      url: "../../public/Images/thumbnail.png", // Must be an absolute URL
+      width: 800,
+      height: 600,
+    },
+    {
+      url: "../../public/Images/thumbnail.png", // Must be an absolute URL
+      width: 1800,
+      height: 1600,
+    },
+  ],
   description:
     "Van Xuan Pharmaceuticals is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
 };
