@@ -4,6 +4,7 @@ import BlogNews from "./components/blog-news";
 import ContactComponent from "./components/contact";
 import GalleryExhibition from "./components/gallery-exhibition";
 import SimpleMap from "./components/googlemap";
+import Loading from "./components/loading";
 import NumberExpComponent from "./components/number-exp";
 import PartnerComponent from "./components/partner";
 import ServicesComponent from "./components/services";
@@ -15,6 +16,7 @@ export default async function IndexPage() {
 
   return (
     <div>
+      <Loading />
       <BannerComponent />
       <AboutUs />
       <ServicesComponent />
