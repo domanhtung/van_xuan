@@ -40,17 +40,17 @@ export const metadata = {
     url: "https://van-xuan.vercel.app",
     siteName: "Next.js",
     images: [
-      // {
-      //   url: "../../public/Images/thumbnail.png", // Must be an absolute URL
-      //   width: 800,
-      //   height: 600,
-      // },
       {
-        url: "/Images/thumbnail.png", // Must be an absolute URL
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt",
+        url: "../../public/Images/thumbnail.png", // Must be an absolute URL
+        width: 800,
+        height: 600,
       },
+      // {
+      //   url: "/Images/thumbnail.png", // Must be an absolute URL
+      //   width: 1800,
+      //   height: 1600,
+      //   alt: "My custom alt",
+      // },
     ],
     locale: "en_US",
     type: "website",
