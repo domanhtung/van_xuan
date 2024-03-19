@@ -15,11 +15,11 @@ const Loading = () => {
       }, 1000);
       return () => clearTimeout(timeOutId);
     } else {
-      const timeOutId = setTimeout(() => {
+      const id = setTimeout(() => {
         setIsShow(false);
-        clearTimeout(timeOutId);
-      }, 1000);
-      return () => clearTimeout(timeOutId);
+        clearTimeout(id);
+      }, 550);
+      return () => clearTimeout(id);
     }
   }, [isLoaded]);
 

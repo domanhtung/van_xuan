@@ -13,9 +13,7 @@ const ServicesComponent = () => {
       id={navigationsObj.services}
       className="container pt-20 px-5 xl:pt-40 mx-auto text-[14px] xl:text-[16px]"
     >
-      <p className="text-[#FF375F] text-center font-semibold">
-        What's Happening
-      </p>
+      <p className="text-[#FF375F] text-center font-semibold">Our services</p>
       <div className="max-w-[800px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
         We're Providing Best Services To Our Customers
       </div>
