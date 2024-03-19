@@ -44,8 +44,8 @@ const Testimonials = () => {
         >
           {testimonials?.map((content, index: number) => {
             return (
-              <SwiperSlide key={index}>
-                <div className="pt-[35px] pb-20">
+              <SwiperSlide key={index} className="h-full">
+                <div className="h-full pt-[35px] pb-20">
                   <div className="pb-5 shadow-[1px_1px_10px_rgba(0,0,0,0.1)] rounded-[5px]">
                     <div className="relative h-[50px]">
                       <Image

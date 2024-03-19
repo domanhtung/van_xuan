@@ -19,6 +19,7 @@ const HeaderComponent = ({ dictionary }: any) => {
   const mobileNavRef = useRef<any>();
   const router = useRouter();
   const pathName = usePathname();
+  const [isShowNavbar, setIsShowNavbar] = useState<boolean>(false)
   const redirectedPathName = (locale: Locale | string) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
@@ -108,8 +109,10 @@ const HeaderComponent = ({ dictionary }: any) => {
     if (mobileNavRef?.current) {
       if (mobileNavRef.current.style.marginTop === "0px") {
         mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
+        setIsShowNavbar(false)
       } else {
         mobileNavRef.current.style.marginTop = "0px";
+        setIsShowNavbar(true);
       }
     }
   };
@@ -210,14 +213,14 @@ const HeaderComponent = ({ dictionary }: any) => {
           <div
             className={clsx(
               "relative z-[1] bg-white",
-              !showMobileNav && "shadow-xl"
+              !isShowNavbar && "shadow-xl"
             )}
           >
             <div className="flex container mx-auto px-5 py-3 items-center justify-between">
               <Link href={"/"}>
                 <Image
                   src={logo}
-                  className="w-[100px] lg:w-[157px] h-[40px] lg:h-[36px]"
+                  className="w-[100px] lg:w-[157px] h-[24px] lg:h-[36px]"
                   width={157}
                   height={36}
                   priority

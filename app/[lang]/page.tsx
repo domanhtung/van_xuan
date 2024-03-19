@@ -20,8 +20,8 @@ export default async function IndexPage() {
       <ServicesComponent />
       <NumberExpComponent />
       <PartnerComponent />
-      <Testimonials />
       <GalleryExhibition />
+      <Testimonials />
       <BlogNews />
       <ContactComponent />
       <SubScribeComponent />
