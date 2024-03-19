@@ -39,21 +39,20 @@ const AboutUs = () => {
           need, delivered with care and efficiency.
         </p>
         <div>
-          <div className="flex 2xl:grid grid-cols-3 gap-3 md:gap-0 mt-3 xl:mt-6 justify-between">
+          <div className="grid md:flex 2xl:grid md:grid-cols-3 gap-3 md:gap-0 mt-3 xl:mt-6 md:justify-between">
             {aboutServe?.map((serve) => {
               return (
-                <div key={serve?.idx}>
-                  <div
-                    className={clsx(
-                      "w-fit xl:px-2 xl:py-2 text-[14px] xl:text-[18px] font-bold text-[#002856] cursor-pointer border-b-[2px]",
-                      tab === serve?.idx
-                        ? "border-[#FF375F]"
-                        : "border-transparent"
-                    )}
-                    onClick={() => setTab(serve?.idx)}
-                  >
-                    {serve?.tab}
-                  </div>
+                <div
+                  key={serve?.idx}
+                  className={clsx(
+                    "w-full md:w-fit xl:px-2 xl:py-2 text-[14px] xl:text-[18px] font-bold text-[#002856] cursor-pointer border-b-[2px]",
+                    tab === serve?.idx
+                      ? "border-[#FF375F]"
+                      : "border-black border-opacity-5 md:border-opacity-100 md:border-transparent"
+                  )}
+                  onClick={() => setTab(serve?.idx)}
+                >
+                  {serve?.tab}
                 </div>
               );
             })}

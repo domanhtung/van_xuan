@@ -16,9 +16,10 @@ const HeaderComponent = ({ dictionary }: any) => {
   const headerRef = useRef<any>();
   const stickyRef = useRef<any>();
   const scrollTopRef = useRef<any>();
+  const mobileNavRef = useRef<any>();
   const router = useRouter();
   const pathName = usePathname();
-  const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+  const [isShowNavbar, setIsShowNavbar] = useState<boolean>(false)
   const redirectedPathName = (locale: Locale | string) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
@@ -86,12 +87,40 @@ const HeaderComponent = ({ dictionary }: any) => {
   const scrollToView = (id: string) => {
     if (typeof document !== "undefined") {
       const element = document?.getElementById(id);
-      console.log(element);
       if (element?.scrollIntoView) {
         element.scrollIntoView({
           behavior: "smooth",
         });
+      } else {
+        router?.push("/");
       }
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window?.outerWidth >= 1024) {
+      return;
+    } else if (mobileNavRef?.current) {
+      mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
+    }
+  }, []);
+
+  const showMobileNav = () => {
+    if (mobileNavRef?.current) {
+      if (mobileNavRef.current.style.marginTop === "0px") {
+        mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
+        setIsShowNavbar(false)
+      } else {
+        mobileNavRef.current.style.marginTop = "0px";
+        setIsShowNavbar(true);
+      }
+    }
+  };
+
+  const selectNavBar = (nav: string) => {
+    scrollToView(nav);
+    if (mobileNavRef?.current) {
+      mobileNavRef.current.style.marginTop = `-${mobileNavRef.current.offsetHeight}px`;
     }
   };
 
@@ -110,7 +139,7 @@ const HeaderComponent = ({ dictionary }: any) => {
       >
         <div className="relative z-[1] bg-white">
           <div className="grid md:flex justify-center md:justify-start container mx-auto py-3 px-3 lg:px-5 text-[14px] items-center">
-            <div className="flex md:pr-4 md:mr-4 gap-2 items-center justify-center md:justify-start md:border-r border-black border-opacity-25">
+            <div className="hidden lg:flex md:pr-4 md:mr-4 gap-2 items-center justify-center md:justify-start md:border-r border-black border-opacity-25">
               <Image
                 src={phoneNumber}
                 width={16}
@@ -120,7 +149,7 @@ const HeaderComponent = ({ dictionary }: any) => {
               />
               (+024) 592 71 449
             </div>
-            <div className="flex gap-2 items-center justify-center md:justify-start">
+            <div className="hidden lg:flex gap-2 items-center justify-center md:justify-start">
               <Image
                 src={openTime}
                 width={16}
@@ -153,7 +182,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                   })}
                 </select>
               </div>
-              <div className="flex gap-2 lg:gap-4 pl-4 ml-4 items-center justify-center md:justify-start border-l border-black border-opacity-25">
+              {/* <div className="flex gap-2 lg:gap-4 pl-4 ml-4 items-center justify-center md:justify-start border-l border-black border-opacity-25">
                 {listSocial?.map((social) => {
                   return (
                     <Link
@@ -171,7 +200,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                     </Link>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -184,18 +213,20 @@ const HeaderComponent = ({ dictionary }: any) => {
           <div
             className={clsx(
               "relative z-[1] bg-white",
-              !showMobileNav && "shadow-xl"
+              !isShowNavbar && "shadow-xl"
             )}
           >
             <div className="flex container mx-auto px-5 py-3 items-center justify-between">
-              <Image
-                src={logo}
-                className="w-[100px] lg:w-[120px] h-[40px] lg:h-[50px]"
-                width={120}
-                height={50}
-                priority
-                alt="logo"
-              />
+              <Link href={"/"}>
+                <Image
+                  src={logo}
+                  className="w-[100px] lg:w-[157px] h-[24px] lg:h-[36px]"
+                  width={157}
+                  height={36}
+                  priority
+                  alt="logo"
+                />
+              </Link>
               <ul className="hidden lg:flex gap-5 xl:gap-10 items-center">
                 {navigations?.map((nav: string) => {
                   return (
@@ -217,7 +248,7 @@ const HeaderComponent = ({ dictionary }: any) => {
               </button>
               <button
                 className="grid lg:hidden gap-1 p-2 border border-[#002856] rounded-[5px]"
-                onClick={() => setShowMobileNav(!showMobileNav)}
+                onClick={() => showMobileNav()}
               >
                 {[...Array(3)]?.map((_, index: number) => {
                   return (
@@ -231,10 +262,8 @@ const HeaderComponent = ({ dictionary }: any) => {
             </div>
           </div>
           <div
-            className={clsx(
-              "overflow-hidden z-0 duration-500 bg-white shadow-xl h-full",
-              showMobileNav ? "mobile-menu-show" : "mobile-menu-hide"
-            )}
+            ref={mobileNavRef}
+            className="overflow-hidden block lg:hidden z-0 duration-500 bg-white shadow-xl h-full mt-[-200%]"
           >
             <div className="container mx-auto">
               <ul className="grid lg:hidden px-5 py-5 gap-5 xl:gap-10 items-center">
@@ -243,10 +272,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                     <span
                       className="capitalize font-semibold text-[#002856] cursor-pointer"
                       key={nav}
-                      onClick={() => {
-                        scrollToView(nav);
-                        setShowMobileNav(false);
-                      }}
+                      onClick={() => selectNavBar(nav)}
                     >
                       {dictionary?.header?.navName?.[nav]}
                     </span>
