@@ -74,7 +74,10 @@ const NumberExpComponent = () => {
         }
       }, {});
       observer?.observe(currentRef?.current);
-      return () => observer?.unobserve(currentRef?.current);
+      return () =>
+        observer?.unobserve &&
+        currentRef?.current &&
+        observer?.unobserve(currentRef?.current);
     }
   }, []);
 
