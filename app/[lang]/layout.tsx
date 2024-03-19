@@ -20,9 +20,9 @@ export default async function Root({
 
   return (
     <html lang={params.lang}>
-      <head>
+      {/* <head>
         <meta property="og:image" content="../../public/Images/thumbnail.png" />
-      </head>
+      </head> */}
       <body>
         <HeaderComponent dictionary={dictionary} />
         <div className="relative xl:pt-[160px]">{children}</div>
@@ -33,23 +33,49 @@ export default async function Root({
 }
 
 export const metadata = {
-  title: "Varphaco",
-  // openGraph: {
-  //   images: ["../../public/Images/thumbnail.png", thumbnail],
-  // },
-  // metadataBase: new URL("../../public/Images/thumbnail.png"),
-  images: [
-    {
-      url: "../../public/Images/thumbnail.png", // Must be an absolute URL
-      width: 800,
-      height: 600,
-    },
-    {
-      url: "../../public/Images/thumbnail.png", // Must be an absolute URL
-      width: 1800,
-      height: 1600,
-    },
-  ],
-  description:
-    "Van Xuan Pharmaceuticals is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
+  openGraph: {
+    title: "Varphaco",
+    description:
+      "Van Xuan Pharmaceuticals is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
+    url: "https://nextjs.org",
+    siteName: "Next.js",
+    images: [
+      // {
+      //   url: "../../public/Images/thumbnail.png", // Must be an absolute URL
+      //   width: 800,
+      //   height: 600,
+      // },
+      {
+        url: "/Images/thumbnail.png", // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  // title: "Varphaco",
+  // // openGraph: {
+  // //   images: ["../../public/Images/thumbnail.png", thumbnail],
+  // // },
+  // // metadataBase: new URL("../../public/Images/thumbnail.png"),
+  // url: "http://localhost:3000",
+  // siteName: "Next.js",
+  // images: [
+  //   {
+  //     url: "/Images/thumbnail.png", // Must be an absolute URL
+  //     width: 800,
+  //     height: 600,
+  //   },
+  //   {
+  //     url: "/Images/thumbnail.png", // Must be an absolute URL
+  //     width: 1800,
+  //     height: 1600,
+  //   },
+  // ],
+  // locale: 'en_US',
+  // type: 'website',
+  // description:
+  //   "Van Xuan Pharmaceuticals is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
 };
