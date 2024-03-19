@@ -37,7 +37,7 @@ export const metadata = {
     title: "Varphaco",
     description:
       "Van Xuan Pharmaceuticals is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
-    url: "https://nextjs.org",
+    url: "https://van-xuan.vercel.app",
     siteName: "Next.js",
     images: [
       // {
