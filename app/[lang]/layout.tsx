@@ -41,41 +41,10 @@ export const metadata = {
     siteName: "Next.js",
     images: [
       {
-        url: "../../public/Images/thumbnail.png", // Must be an absolute URL
-        width: 800,
-        height: 600,
+        url: "/Images/thumbnail.png",
       },
-      // {
-      //   url: "/Images/thumbnail.png", // Must be an absolute URL
-      //   width: 1800,
-      //   height: 1600,
-      //   alt: "My custom alt",
-      // },
     ],
     locale: "en_US",
     type: "website",
   },
-  // title: "Varphaco",
-  // // openGraph: {
-  // //   images: ["../../public/Images/thumbnail.png", thumbnail],
-  // // },
-  // // metadataBase: new URL("../../public/Images/thumbnail.png"),
-  // url: "http://localhost:3000",
-  // siteName: "Next.js",
-  // images: [
-  //   {
-  //     url: "/Images/thumbnail.png", // Must be an absolute URL
-  //     width: 800,
-  //     height: 600,
-  //   },
-  //   {
-  //     url: "/Images/thumbnail.png", // Must be an absolute URL
-  //     width: 1800,
-  //     height: 1600,
-  //   },
-  // ],
-  // locale: 'en_US',
-  // type: 'website',
-  // description:
-  //   "Van Xuan Pharmaceuticals is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
 };
