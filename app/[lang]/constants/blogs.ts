@@ -1,10 +1,12 @@
-import blog1 from "../../../public/Images/blog_1.jpg";
+import blog1 from "../../../public/Images/blog_12.jpg";
 import blog2 from "../../../public/Images/blog_5.png";
 import blog3 from "../../../public/Images/blog_7.jpg";
+import blog4 from "../../../public/Images/blog_1.jpg";
 
 export const blogsPreview = [
   {
     img: blog1,
+    preview: blog4,
     id: 1,
     subject: "Exploration",
     time: new Date("2024-1-12"),
@@ -14,6 +16,7 @@ export const blogsPreview = [
   },
   {
     img: blog2,
+    preview: blog2,
     id: 2,
     subject: "Treatment",
     time: new Date("2024-2-25"),
@@ -23,6 +26,7 @@ export const blogsPreview = [
   },
   {
     img: blog3,
+    preview: blog3,
     id: 3,
     subject: "Technology",
     time: new Date("2024-2-23"),

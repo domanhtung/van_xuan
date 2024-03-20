@@ -7,7 +7,6 @@ import IconCalendar from "../../../../../public/Images/calendar.svg";
 import IconArrowRight from "../../../../../public/Images/arrow_right.svg";
 import { useMemo } from "react";
 import clsx from "clsx";
-import ImgTeamBuilding from "../../../../../public/Images/blog_1_1.jpg";
 import ImgAddBlog from "../../../../../public/Images/add_blog.svg";
 import ImgCommentBlog from "../../../../../public/Images/comment_blog.svg";
 import BlogDetailTeamBuilding from "./team-bulding";
@@ -38,7 +37,6 @@ interface Props {
 }
 
 const BlogDetail = ({ slug }: Props) => {
-  console.log("slug: ", slug);
   const currentBlog = blogsPreview?.find((blog) => blog?.slug === slug);
 
   return (
@@ -103,7 +101,7 @@ const BlogDetail = ({ slug }: Props) => {
                     className="flex gap-3 mt-4 group cursor-pointer"
                   >
                     <Image
-                      src={item?.img}
+                      src={item?.preview}
                       className="w-[85px] min-w-[85px] h-[85px] rounded-[4px] object-cover"
                       width={85}
                       height={85}
@@ -181,7 +179,7 @@ const BlogDetail = ({ slug }: Props) => {
         </div>
         <div className="xl:col-span-2 order-1 xl:order-2">
           <Image
-            src={currentBlog?.img || ImgTeamBuilding}
+            src={currentBlog?.img || ""}
             className="w-full h-auto md:h-[450px] object-cover"
             width={850}
             height={450}
@@ -239,7 +237,9 @@ const BlogDetail = ({ slug }: Props) => {
               className="w-full !h-[50px] mt-5 border px-5 border-black border-opacity-10 outline-none"
               placeholder="Phone Number*"
             />
-            <button className="btn style2 w-full md:w-fit mt-5">Post A Comment</button>
+            <button className="btn style2 w-full md:w-fit mt-5">
+              Post A Comment
+            </button>
           </div>
         </div>
       </div>

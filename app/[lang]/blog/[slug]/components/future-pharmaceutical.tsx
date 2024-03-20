@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Img1 from "../../../../../public/Images/blog_6.png";
-import Img3 from "../../../../../public/Images/blog_1_4.jpg";
 
 const FuturePharmaceutical = () => {
   return (

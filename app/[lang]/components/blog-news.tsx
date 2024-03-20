@@ -40,7 +40,7 @@ const BlogNews = () => {
                         className="w-full h-full object-cover group-hover:rotate-[4deg] group-hover:scale-[1.11] duration-500"
                         width={414}
                         height={293}
-                        src={item?.img}
+                        src={item?.preview}
                         alt="blog"
                       />
                       <div className="absolute top-5 right-5 px-3 xl:px-4 py-2 bg-[#002856] text-white rounded-[50px]">
