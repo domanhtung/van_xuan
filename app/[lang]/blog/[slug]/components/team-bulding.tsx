@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Img1 from "../../../../../public/Images/blog_13.jpg";
-import Img2 from "../../../../../public/Images/blog_14.jpg";
-import Img3 from "../../../../../public/Images/blog_15.jpg";
+import Img1 from "../../../../../public/Images/blog_13.png";
+import Img2 from "../../../../../public/Images/blog_14.png";
+import Img3 from "../../../../../public/Images/blog_15.png";
 
 const BlogDetailTeamBuilding = () => {
   return (
