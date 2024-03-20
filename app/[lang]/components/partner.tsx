@@ -21,7 +21,7 @@ const PartnerComponent = () => {
             >
               <Image
                 src={partner?.img}
-                className="w-full h-[80px] object-contain"
+                className="w-full max-w-[200px] sm:max-w-full h-[80px] object-contain"
                 width={230}
                 height={80}
                 priority
