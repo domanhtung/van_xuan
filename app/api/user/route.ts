@@ -10,3 +10,11 @@ export async function GET(req: NextRequest, res: NextResponse) {
     return NextResponse.json({}, { status: 200 });
   } catch (e) {}
 }
+
+export async function POST(req: NextRequest, res: NextResponse) {
+  try {
+    const body = await req.json();
+    console.log("body: ", body);
+    return NextResponse.json({}, { status: 200 });
+  } catch (e) {}
+}

@@ -8,6 +8,7 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "0.2.32",
     "aos": "^2.3.4",
+    "bcrypt": "^5.1.1",
     "clsx": "^2.1.0",
     "mongodb": "^6.5.0",
     "negotiator": "0.6.3",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
+    "@types/bcrypt": "^5.0.2",
     "@types/google-map-react": "^2.1.10",
     "@types/negotiator": "0.6.1",
     "@types/node": "^18.11.5",

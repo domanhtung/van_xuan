@@ -423,7 +423,7 @@ textarea {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../../public/Images/header_blog_detail.png");
+  background-image: url("../../public/Images/banner.png");
 }
 
 .fade-down {
@@ -515,4 +515,12 @@ textarea {
   to {
     opacity: 0;
   }
+}
+
+.text-ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
