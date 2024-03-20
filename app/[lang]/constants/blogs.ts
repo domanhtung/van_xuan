@@ -30,7 +30,8 @@ export const blogsPreview = [
     id: 3,
     subject: "Technology",
     time: new Date("2024-2-23"),
-    title: "Overview of Vietnam’s pharmaceutical manufacturing industry 2023. What direction for pharmaceutical enterprises?",
+    title:
+      "Overview of Vietnam’s pharmaceutical manufacturing industry 2023. What direction for pharmaceutical enterprises?",
     slug: "overview_of_vietnam_s_pharmaceutical_manufacturing_industry_2023",
     tags: ["heath", "medicine"],
   },
