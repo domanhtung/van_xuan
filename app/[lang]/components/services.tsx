@@ -6,11 +6,12 @@ import Image from "next/image";
 import { Navigation } from "swiper/modules";
 import { clsx } from "clsx";
 import { navigationsObj } from "../constants/header";
+import Link from "next/link";
 
 const ServicesComponent = () => {
   return (
     <div
-      id={navigationsObj.services}
+      id={navigationsObj.service}
       className="container pt-20 px-5 xl:pt-40 mx-auto text-[14px] xl:text-[16px]"
     >
       <p className="text-[#FF375F] text-center font-semibold">Our services</p>
@@ -45,34 +46,36 @@ const ServicesComponent = () => {
           {serviceContents?.map((content, index: number) => {
             return (
               <SwiperSlide key={index}>
-                <Image
-                  src={content?.img}
-                  className="w-full h-auto"
-                  width={415}
-                  height={290}
-                  priority
-                  alt="service"
-                />
-                <div className="relative h-[128px]">
-                  <div
-                    className={clsx(
-                      "absolute w-[90%] md:h-[200px] left-1/2 bottom-0 p-5 -translate-x-1/2 bg-white shadow-xl cursor-pointer duration-150",
-                      "hover:scale-105 hover:translate-y-[-20px]"
-                    )}
-                  >
-                    <div className="flex gap-3 items-center">
-                      <div className="service-icon flex w-[60px] xl:w-[70px] h-[60px] xl:h-[70px] min-w-[60px] xl:min-w-[70px] group items-center justify-center">
-                        {content?.icon}
+                <Link href={`/${navigationsObj.service}?service=${content.key}`}>
+                  <Image
+                    src={content?.img}
+                    className="w-full h-auto"
+                    width={415}
+                    height={290}
+                    priority
+                    alt="service"
+                  />
+                  <div className="relative h-[128px]">
+                    <div
+                      className={clsx(
+                        "absolute w-[90%] md:h-[200px] left-1/2 bottom-0 p-5 -translate-x-1/2 bg-white shadow-xl cursor-pointer duration-150",
+                        "hover:scale-105 hover:translate-y-[-20px]"
+                      )}
+                    >
+                      <div className="flex gap-3 items-center">
+                        <div className="service-icon flex w-[60px] xl:w-[70px] h-[60px] xl:h-[70px] min-w-[60px] xl:min-w-[70px] group items-center justify-center">
+                          {content?.icon}
+                        </div>
+                        <div className="text-[16px] xl:text-[20px] font-bold text-[#002856]">
+                          {content?.title}
+                        </div>
                       </div>
-                      <div className="text-[16px] xl:text-[20px] font-bold text-[#002856]">
-                        {content?.title}
-                      </div>
+                      <p className="mt-4 text-[#666666] leading-[28px]">
+                        {content?.des}
+                      </p>
                     </div>
-                    <p className="mt-4 text-[#666666] leading-[28px]">
-                      {content?.des}
-                    </p>
                   </div>
-                </div>
+                </Link>
               </SwiperSlide>
             );
           })}

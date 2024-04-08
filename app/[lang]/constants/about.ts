@@ -35,3 +35,48 @@ export const aboutServe = [
     ],
   },
 ];
+
+export const aboutTimeline = [
+  {
+    time: "2005",
+    title: "Establishment of the Company",
+    content:
+      "Vapharco began its adventure in the pharmaceutical industry in 2005 when it was created by a committed group of fewer than ten people.",
+  },
+  {
+    time: "2006 - 2008",
+    title: "Northern & Central Market Expansion",
+    content:
+      "Vapharco effectively entered and served the Northern and Central markets of Vietnam as it continued to grow its activities.",
+  },
+  {
+    time: "2012",
+    title: "Increase in Workforce",
+    content:
+      "Vapharco had grown significantly, employing over 100 people, a reflection of the company's growing capabilities and market presence.",
+  },
+  {
+    time: "2013 - 2017",
+    title: "Central Highlands expansion",
+    content:
+      "In order to increase its reach, Vapharco entered the provinces of the Central Highlands between 2013 and 2017, hiring 180 people.",
+  },
+  {
+    time: "2012",
+    title: "Increase in Workforce",
+    content:
+      "Vapharco had grown significantly, employing over 100 people, a reflection of the company's growing capabilities and market presence.",
+  },
+  {
+    time: "2018",
+    title: "Creation of Affiliated Businesses",
+    content:
+      "Vapharco established subsidiaries in Ho Chi Minh City to expand into the Eastern and Southwest regions, focusing on the Ho Chi Minh City market and growing its workforce to over 250 employees.",
+  },
+  {
+    time: "2018 - now",
+    title: "National Network",
+    content:
+      "Vapharco operates from its Hanoi headquarters and Ho Chi Minh City subsidiaries, extending its market reach with strategic partnerships and secondary distributors across all 63 provinces and cities nationwide.",
+  },
+];

@@ -393,7 +393,20 @@ textarea {
 .mobile-menu-hide {
   transform: translate3d(0, -100%, 0);
 }
-
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.sticky-service {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+}
 @media (max-width: 1280px) {
   .btn {
     line-height: 20px;
@@ -415,6 +428,11 @@ textarea {
     position: relative;
     width: 100%;
     left: 0;
+  }
+  .sticky-service {
+    position: relative;
+    top: 0;
+    max-height: none;
   }
 }
 

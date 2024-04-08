@@ -52,7 +52,9 @@ export function middleware(request: NextRequest) {
     if (!request?.url?.includes("Images")) {
       return NextResponse.redirect(
         new URL(
-          `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
+          `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}${
+            request.nextUrl.search || ""
+          }`,
           request.url
         )
       );

@@ -28,7 +28,7 @@ export const listSocial = [
 
 export const navigationsObj = {
   home: "home",
-  services: "services",
+  service: "service",
   about: "about",
   blog: "blog",
   contact: "contact",
@@ -39,7 +39,7 @@ export const navigationsObj = {
 
 export const navigations = [
   navigationsObj.home,
-  navigationsObj.services,
+  navigationsObj.service,
   navigationsObj.about,
   navigationsObj.blog,
   navigationsObj.contact,
