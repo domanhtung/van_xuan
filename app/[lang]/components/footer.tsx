@@ -92,8 +92,8 @@ const FooterComponent = () => {
           <div className="grid sm:flex h-full justify-center gap-3 items-center">
             <div className="flex items-center gap-1 text-white">
               <IconCopyright />
-              Duch. All Rights Reserved By
-              <span>HiBootstrap</span>
+              2024, All Rights Reserved by
+              <span>@Vapharco</span>
             </div>
             {/* <div className="flex gap-2 items-center justify-center sm:justify-start text-white">
               Follow Us On:
