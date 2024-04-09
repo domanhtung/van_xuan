@@ -49,13 +49,13 @@ const FooterComponent = () => {
               <div className="min-w-[18px]">
                 <IconSupport />
               </div>
-              +258-456-8790
+              024 63294103
             </div>
             <div className="flex gap-1 mt-3">
               <div className="min-w-[18px]">
                 <IconMail />
               </div>
-              info@duch.com
+              info@vapharco.com
             </div>
           </div>
           <div className="px-3 lg:col-span-2">

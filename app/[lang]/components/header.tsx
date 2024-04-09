@@ -135,7 +135,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                 priority
                 alt="phone number"
               />
-              (+024) 592 71 449
+              (024) 63294103
             </div>
             <div className="hidden lg:flex gap-2 items-center justify-center md:justify-start">
               <Image
