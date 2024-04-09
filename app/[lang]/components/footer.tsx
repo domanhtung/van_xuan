@@ -93,7 +93,9 @@ const FooterComponent = () => {
             <div className="flex items-center gap-1 text-white">
               <IconCopyright />
               2024, All Rights Reserved by
-              <span>@Vapharco</span>
+              <span>
+                <a href="mailto:info@vapharco.com">@Vapharco</a>
+              </span>
             </div>
             {/* <div className="flex gap-2 items-center justify-center sm:justify-start text-white">
               Follow Us On:

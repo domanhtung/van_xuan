@@ -216,23 +216,20 @@ const HeaderComponent = ({ dictionary }: any) => {
                 />
               </Link>
               <ul className="hidden lg:flex gap-5 xl:gap-10 items-center">
-                {navigations?.map((nav: string) => {
+                {navigations?.map((nav: string, index) => {
                   return (
                     <>
                       {nav === navigationsObj.about ||
                       nav === navigationsObj.service ? (
-                        <Link href={`/${nav}`}>
-                          <span
-                            className="capitalize font-semibold text-[#002856] cursor-pointer"
-                            key={nav}
-                          >
+                        <Link key={index} href={`/${nav}`}>
+                          <span className="capitalize font-semibold text-[#002856] cursor-pointer">
                             {dictionary?.header?.navName?.[nav]}
                           </span>
                         </Link>
                       ) : (
                         <span
                           className="capitalize font-semibold text-[#002856] cursor-pointer"
-                          key={nav}
+                          key={index}
                           onClick={() => scrollToView(nav, router)}
                         >
                           {dictionary?.header?.navName?.[nav]}
