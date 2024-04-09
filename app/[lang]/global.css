@@ -132,34 +132,9 @@ select {
   transition: 0.4s;
 }
 
-.service-icon:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 0%;
-  height: 100%;
-  background-color: #ff375f;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  visibility: hidden;
-  opacity: 0;
-  z-index: -1;
-}
-
-.service-icon:hover:after {
-  width: 100%;
-  opacity: 1;
-  visibility: visible;
-}
-
 .service-icon svg path {
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-.service-icon:hover svg path {
-  fill: #fff;
 }
 
 .about-tab-content {

@@ -44,7 +44,13 @@ const BannerComponent = () => {
                 return (
                   <div key={index} className="p-5 bg-white shadow-xl">
                     <div className="service-icon w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] flex group items-center justify-center">
-                      {value?.icon}
+                      <Image
+                        src={value.icon}
+                        width={40}
+                        height={40}
+                        priority
+                        alt="icon"
+                      />
                     </div>
                     <div className="mt-2 lg:mt-3 font-bold text-[18px] xl:text-[22px] text-[#002856]">
                       {value?.title}

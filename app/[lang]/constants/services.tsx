@@ -11,35 +11,35 @@ import ImgService5 from "../../../public/Images/service_5.png";
 
 export const serviceContents = [
   {
-    icon: <IconFoster />,
+    icon: "/Images/icons/market_analystic.png",
     img: ImgService1,
     key:"service_1",
     title: "Market Analysis & Entry Strategy",
     des: "Your trusted partner for seamless pharmaceutical export services to Vietnam.",
   },
   {
-    icon: <IconOptimize />,
+    icon: "/Images/icons/compliance.png",
     img: ImgService2,
     key:"service_2",
     title: "Regulatory Compliance & Product Registration",
     des: "Efficient regulatory support: approved dossiers, communication aid, and compliance assurance.",
   },
   {
-    icon: <IconDeliver />,
+    icon: "/Images/icons/logistic.png",
     img: ImgService3,
     key:"service_3",
     title: "Supply Chain & Logistics",
     des: "Offering warehousing, transportation, and quality inspection services.",
   },
   {
-    icon: <IconFoster />,
+    icon: "/Images/icons/brand_building.png",
     img: ImgService4,
     key:"service_4",
     title: "Marketing Initiatives and Brand Building",
     des: "Driving market growth through research, workshops, events, promotions, and tenders.",
   },
   {
-    icon: <IconOptimize />,
+    icon: "/Images/icons/partnership.png",
     img: ImgService5,
     key:"service_5",
     title: "Partnership Management",

@@ -46,7 +46,9 @@ const ServicesComponent = () => {
           {serviceContents?.map((content, index: number) => {
             return (
               <SwiperSlide key={index}>
-                <Link href={`/${navigationsObj.service}?service=${content.key}`}>
+                <Link
+                  href={`/${navigationsObj.service}?service=${content.key}`}
+                >
                   <Image
                     src={content?.img}
                     className="w-full h-auto"
@@ -64,7 +66,13 @@ const ServicesComponent = () => {
                     >
                       <div className="flex gap-3 items-center">
                         <div className="service-icon flex w-[60px] xl:w-[70px] h-[60px] xl:h-[70px] min-w-[60px] xl:min-w-[70px] group items-center justify-center">
-                          {content?.icon}
+                          <Image
+                            src={content?.icon}
+                            width={40}
+                            height={40}
+                            priority
+                            alt="icon"
+                          />
                         </div>
                         <div className="text-[16px] xl:text-[20px] font-bold text-[#002856]">
                           {content?.title}
