@@ -19,7 +19,7 @@ const contents = [
     content: "Employees",
   },
   {
-    numb: 98,
+    numb: 63,
     content: "Entered Provinces",
   },
 ];
