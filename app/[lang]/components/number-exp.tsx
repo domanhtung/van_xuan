@@ -8,19 +8,19 @@ import clsx from "clsx";
 const contents = [
   {
     numb: 19,
-    content: "Years of experience",
+    content: "Established Years",
   },
   {
-    numb: 1886,
-    content: "Happy Patients",
+    numb: 5,
+    content: "Subsidiaries",
   },
   {
-    numb: 114,
-    content: "Number of Doctors",
+    numb: 250,
+    content: "Employees",
   },
   {
-    numb: 189,
-    content: "Number of Staffs",
+    numb: 98,
+    content: "Entered Provinces",
   },
 ];
 

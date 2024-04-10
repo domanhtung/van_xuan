@@ -1,5 +1,5 @@
 "use client";
-import { navigations, navigationsObj } from "../constants/header";
+import { navigationsObj } from "../constants/header";
 import imgCategory1 from "../../../public/Images/category_1.png";
 import imgCategory2 from "../../../public/Images/category_2.png";
 import imgCategory3 from "../../../public/Images/category_3.png";
@@ -53,7 +53,7 @@ const GalleryExhibition = () => {
           <div className="max-w-[800px] mx-auto text-[30px] xl:text-[44px] font-bold text-[#002856] text-center">
             Discover Our Best-Selling Product Categories
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 mt-5 gap-5">
             {categories?.map((category, index) => {
               return (
                 <div
@@ -69,9 +69,9 @@ const GalleryExhibition = () => {
                   <div>
                     <Image
                       src={category?.img}
-                      className="w-full h-auto md:h-[200px] object-contain"
-                      width={200}
-                      height={200}
+                      className="w-full h-auto md:h-[150px] object-contain"
+                      width={150}
+                      height={150}
                       priority
                       alt="category"
                     />
