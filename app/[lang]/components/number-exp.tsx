@@ -46,7 +46,7 @@ const ContentItem = ({ item, isAnimate }: Props) => {
             ref.current.innerHTML = currentNumber;
           }
         }
-      }, 70);
+      }, 90);
       return () => clearInterval(intervalId);
     }
   }, [isAnimate]);
@@ -70,7 +70,8 @@ const NumberExpComponent = () => {
       const observer = new IntersectionObserver(function (entries) {
         if (entries?.[0]?.isIntersecting) {
           setIsAnimate(true);
-          observer?.unobserve(currentRef?.current);
+        } else {
+          setIsAnimate(false);
         }
       }, {});
       observer?.observe(currentRef?.current);

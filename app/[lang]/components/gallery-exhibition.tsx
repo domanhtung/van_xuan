@@ -58,7 +58,7 @@ const GalleryExhibition = () => {
               return (
                 <div
                   key={index}
-                  className="grid grid-cols-2 p-3 md:p-5 gap-1 items-center bg-white rounded-[20px]"
+                  className="grid grid-cols-2 p-3 md:p-5 gap-1 items-center bg-white shadow-sm rounded-[20px] duration-150 hover:-translate-y-2 hover:scale-105"
                 >
                   <div>
                     <p className="text-[16px] xl:text-[20px] font-semibold">

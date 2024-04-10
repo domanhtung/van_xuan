@@ -12,7 +12,7 @@ import SubScribeComponent from "./components/subscribe";
 import Testimonials from "./components/testimonials";
 
 export default async function IndexPage() {
-  const googleMapKey = process?.env?.GOOGLE_MAP_KEY || "";
+  // const googleMapKey = process?.env?.GOOGLE_MAP_KEY || "";
 
   return (
     <div>
@@ -27,7 +27,7 @@ export default async function IndexPage() {
       <BlogNews />
       <ContactComponent />
       <SubScribeComponent />
-      <SimpleMap mapKey={googleMapKey} />
+      {/* <SimpleMap mapKey={googleMapKey} /> */}
     </div>
   );
 }

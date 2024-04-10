@@ -52,12 +52,12 @@ const SubMenuServe = () => {
         <div className="pb-3 lg:pb-5 text-[16px] lg:text-[20px] font-bold">
           We serve
         </div>
-        <div className="grid gap-5">
+        <div className="grid gap-5 overflow-hidden">
           {serviceContents?.map((serve, index) => {
             return (
               <div
                 key={index}
-                className="flex gap-5 items-center cursor-pointer"
+                className="flex gap-5 items-center cursor-pointer group"
                 onClick={() => scrollToView(serve.key)}
               >
                 <Image
@@ -68,7 +68,9 @@ const SubMenuServe = () => {
                   priority
                   alt="serve"
                 />
-                <div className="text-[20px] font-bold">{serve.title}</div>
+                <div className="text-[20px] font-bold group-hover:-translate-x-2 group-hover:text-[#FF375F] duration-200">
+                  {serve.title}
+                </div>
               </div>
             );
           })}

@@ -22,7 +22,7 @@ const ContactComponent = () => {
       className="container grid lg:grid-cols-2 pt-20 xl:pt-40 mx-auto px-5 overflow-hidden text-[14px] xl:text-[16px]"
     >
       <div data-aos="fade-right" className="lg:pr-10">
-        <div className="p-10 bg-[#002856]">
+        <div className="p-10 bg-[#002856] rounded-lg">
           <p className="text-[20px] text-white font-bold">
             Feel free to contact us for any query
           </p>

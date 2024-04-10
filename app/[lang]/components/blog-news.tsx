@@ -32,7 +32,7 @@ const BlogNews = () => {
               return (
                 <div
                   key={index}
-                  className="border group border-black border-opacity-10 cursor-pointer"
+                  className="border group border-black border-opacity-10 cursor-pointer rounded-lg overflow-hidden"
                 >
                   <Link href={`/${navigationsObj?.blog}/${item?.slug}`}>
                     <div className="relative w-full h-[300px] overflow-hidden">

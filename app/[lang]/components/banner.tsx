@@ -4,8 +4,37 @@ import banner from "../../../public/Images/banner.png";
 import { bannerContents } from "../constants/banner";
 import { navigationsObj } from "../constants/header";
 import { scrollToView } from "../utils";
+import { useEffect, useRef, useState } from "react";
+import clsx from "clsx";
 
 const BannerComponent = () => {
+  const ref = useRef<any>();
+  // const content =
+  //   "Providing safe, effective, and reliable healthcare solutions. Your well-being, our mission.";
+  const [animation, setAnimation] = useState<boolean>(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimation(true);
+    }, 1500);
+  }, []);
+
+  // useEffect(() => {
+  //   if (animation) {
+  //     let index = 0;
+  //     let currentText = "";
+  //     const intervalId = setInterval(() => {
+  //       currentText += (content?.[index] || " ");
+  //       ref.current.innerText = currentText;
+  //       index++;
+  //       if (index === content?.length) {
+  //         clearInterval(intervalId);
+  //       }
+  //     }, 10);
+  //     return () => clearInterval(intervalId);
+  //   }
+  // }, [animation]);
+
   return (
     <div id={navigationsObj.home}>
       <Image
@@ -19,12 +48,19 @@ const BannerComponent = () => {
       <div className="relative h-[500px] sm:h-[400px] lg:h-[125px] text-[14px] xl:text-[16px]">
         <div className="absolute w-full left-0 bottom-0">
           <div className="container mx-auto px-5">
-            <div className="text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[68px] text-center sm:text-left text-[#002856]">
+            <div
+              className={clsx(
+                "text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[68px] text-center sm:text-left text-[#002856] duration-500",
+                animation
+                  ? "translate-x-0 placeholder-opacity-100"
+                  : "-translate-x-20 opacity-0"
+              )}
+            >
               Transforming <span className="font-semibold">Lives</span> <br />{" "}
               with <span className="font-semibold">Health</span> and{" "}
               <span className="font-semibold">Happiness</span>
             </div>
-            <div className="mt-4 text-[#002856]">
+            <div ref={ref} className="mt-4 text-[#002856]">
               Providing safe, effective, and reliable healthcare solutions. Your
               well-being, our mission.
             </div>
@@ -42,8 +78,8 @@ const BannerComponent = () => {
             <div className="grid lg:grid-cols-3 mt-5 xl:mt-10 gap-4">
               {bannerContents?.map((value, index: number) => {
                 return (
-                  <div key={index} className="p-5 bg-white shadow-xl">
-                    <div className="service-icon w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] flex group items-center justify-center">
+                  <div key={index} className="zoom-inout-group p-5 bg-white group shadow-2xl rounded-lg">
+                    <div className="zoom-inout-item service-icon w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] flex items-center justify-center">
                       <Image
                         src={value.icon}
                         width={40}

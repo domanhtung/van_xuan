@@ -61,7 +61,7 @@ const ServicesComponent = () => {
                     <div
                       className={clsx(
                         "absolute w-[90%] md:h-[200px] left-1/2 bottom-0 p-5 -translate-x-1/2 bg-white shadow-xl cursor-pointer duration-150",
-                        "hover:scale-105 hover:translate-y-[-20px]"
+                        "hover:scale-105 hover:translate-y-[-20px] rounded-lg"
                       )}
                     >
                       <div className="flex gap-3 items-center">

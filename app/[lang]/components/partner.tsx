@@ -17,7 +17,7 @@ const PartnerComponent = () => {
               href={partner?.url}
               key={index}
               target={"_blank"}
-              className="flex w-full h-[120px] xl:h-[150px] px-1 items-center hover:border-none hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)] justify-center border border-black border-opacity-10"
+              className="flex w-full h-[120px] xl:h-[150px] px-1 items-center hover:border-none hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)] justify-center border border-black border-opacity-10 rounded-lg"
             >
               <Image
                 src={partner?.img}
