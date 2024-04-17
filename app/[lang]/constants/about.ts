@@ -50,7 +50,7 @@ export const aboutTimeline = [
       "Vapharco effectively entered and served the Northern and Central markets of Vietnam as it continued to grow its activities.",
   },
   {
-    time: "2012",
+    time: "2009 - 2012",
     title: "Increase in Workforce",
     content:
       "Vapharco had grown significantly, employing over 100 people, a reflection of the company's growing capabilities and market presence.",
@@ -60,12 +60,6 @@ export const aboutTimeline = [
     title: "Central Highlands expansion",
     content:
       "In order to increase its reach, Vapharco entered the provinces of the Central Highlands between 2013 and 2017, hiring 180 people.",
-  },
-  {
-    time: "2012",
-    title: "Increase in Workforce",
-    content:
-      "Vapharco had grown significantly, employing over 100 people, a reflection of the company's growing capabilities and market presence.",
   },
   {
     time: "2018",
