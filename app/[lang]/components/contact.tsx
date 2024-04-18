@@ -10,6 +10,8 @@ import { navigationsObj } from "../constants/header";
 
 const ContactComponent = () => {
   const [selectedQuestion, setSelectedQuestion] = useState<number>();
+  const [isShowMore, setIsShowMore] = useState<boolean>(false);
+
   useEffect(() => {
     if (typeof document !== "undefined") {
       AOS.init();
@@ -68,6 +70,7 @@ const ContactComponent = () => {
         </div>
         <div>
           {contacts?.map((contact, index: number) => {
+            if (!isShowMore && index > 4) return null;
             return (
               <div key={index}>
                 <button
@@ -113,6 +116,15 @@ const ContactComponent = () => {
               </div>
             );
           })}
+          <div className="grid mt-5 justify-center">
+            <span
+              className="text-[#002856] font-semibold cursor-pointer"
+              onClick={() => setIsShowMore(!isShowMore)}
+            >
+              {isShowMore ? "Show less" : "Show more"}
+            </span>
+            <span className="w-[80px] h-[1px] bg-[#002856]" />
+          </div>
         </div>
       </div>
     </div>
