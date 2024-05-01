@@ -19,14 +19,14 @@ const FooterComponent = () => {
             <Link href={"/"}>
               <Image
                 src={Logo}
-                className="w-[100px] lg:w-[157px] h-[24px] lg:h-[36px]"
-                width={157}
-                height={36}
+                className="w-[120px] lg:w-[180px] h-[40px] lg:h-[60px]"
+                width={150}
+                height={30}
                 priority
                 alt="logo"
               />
             </Link>
-            <p className="mt-10">
+            <p className="mt-3 lg:mt-5">
               Van Xuan Pharmaceuticals is Your Reliable Distributor for
               Essential Medications. Ensuring precision and efficiency in
               pharmaceutical distribution for individuals and healthcare
