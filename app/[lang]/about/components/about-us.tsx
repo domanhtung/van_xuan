@@ -86,7 +86,7 @@ const AboutUsDetail = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-3 mt-5 md:mt-10 text-[#666666]">
-            <p className="order-2 md:order-2">
+            <p className="order-2 md:order-1">
               <span className="font-bold">Increased Product Portfolio</span>:
               We're dedicated to broadening the scope of our offerings to
               include a wide variety of medications and medical supplies. Our
@@ -96,7 +96,7 @@ const AboutUsDetail = () => {
             </p>
             <Image
               src={"/Images/about/about_3.png"}
-              className="w-full h-auto"
+              className="w-full h-auto order-1 md:order-2"
               width={410}
               height={220}
               priority
