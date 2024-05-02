@@ -9,7 +9,7 @@ const AboutUsDetail = () => {
   return (
     <div>
       <Loading />
-      <div className="pt-[107px] xl:pt-0">
+      <div className="pt-[64px] lg:pt-[107px] xl:pt-0">
         <div className="header-blog-detail">
           <div className="lg:container mx-auto px-5 py-10">
             <div className="mx-auto lg:mx-0 text-[26px] md:text-[30px] xl:text-[44px] text-[#002856] text-left">

@@ -65,7 +65,10 @@ const BannerComponent = () => {
               well-being, our mission.
             </div>
             <div className="sm:flex gap-2 mt-5 xl:mt-10 items-center justify-between">
-              <button className="btn w-full sm:w-auto style2">
+              <button
+                className="btn w-full sm:w-auto style2"
+                onClick={() => scrollToView(navigationsObj.contact)}
+              >
                 Book An Appointment
               </button>
               <button
@@ -78,7 +81,10 @@ const BannerComponent = () => {
             <div className="grid lg:grid-cols-3 mt-5 xl:mt-10 gap-4">
               {bannerContents?.map((value, index: number) => {
                 return (
-                  <div key={index} className="zoom-inout-group p-5 bg-white group shadow-2xl rounded-lg">
+                  <div
+                    key={index}
+                    className="zoom-inout-group p-5 bg-white group shadow-2xl rounded-lg"
+                  >
                     <div className="zoom-inout-item service-icon w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] flex items-center justify-center">
                       <Image
                         src={value.icon}

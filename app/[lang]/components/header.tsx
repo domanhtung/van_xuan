@@ -125,7 +125,7 @@ const HeaderComponent = ({ dictionary }: any) => {
         ref={stickyRef}
         className="absolute w-full top-0 left-0 z-50 text-[14px] xl:text-[16px]"
       >
-        <div className="relative z-[1] bg-white">
+        <div className="relative hidden lg:block z-[1] bg-white">
           <div className="grid md:flex justify-center md:justify-start container mx-auto py-3 px-3 lg:px-5 text-[14px] items-center">
             <div className="hidden lg:flex md:pr-4 md:mr-4 gap-2 items-center justify-center md:justify-start md:border-r border-black border-opacity-25">
               <Image
@@ -147,7 +147,7 @@ const HeaderComponent = ({ dictionary }: any) => {
               />
               {dictionary?.header?.openTime}
             </div>
-            <div className="flex ml-auto gap-2 items-center justify-center">
+            {/* <div className="flex ml-auto gap-2 items-center justify-center">
               <div className="flex gap-2 items-center justify-center">
                 <Image
                   src={language}
@@ -170,29 +170,10 @@ const HeaderComponent = ({ dictionary }: any) => {
                   })}
                 </select>
               </div>
-              {/* <div className="flex gap-2 lg:gap-4 pl-4 ml-4 items-center justify-center md:justify-start border-l border-black border-opacity-25">
-                {listSocial?.map((social) => {
-                  return (
-                    <Link
-                      key={social?.idx}
-                      href={social?.url}
-                      className="duration-200 hover:-translate-y-1"
-                    >
-                      <Image
-                        src={social?.img}
-                        width={20}
-                        height={20}
-                        priority
-                        alt="social"
-                      />
-                    </Link>
-                  );
-                })}
-              </div> */}
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="relative z-[1] bg-white">
+        <div className="relative hidden lg:block z-[1] bg-white">
           <div className="container mx-auto px-5">
             <div className="w-full h-[1px] bg-black opacity-25" />
           </div>
@@ -268,13 +249,28 @@ const HeaderComponent = ({ dictionary }: any) => {
               <ul className="grid lg:hidden px-5 py-5 gap-5 xl:gap-10 items-center">
                 {navigations?.map((nav: string) => {
                   return (
-                    <span
-                      className="capitalize font-semibold text-[#002856] cursor-pointer"
-                      key={nav}
-                      onClick={() => selectNavBar(nav)}
-                    >
-                      {dictionary?.header?.navName?.[nav]}
-                    </span>
+                    <>
+                      {nav === navigationsObj.about ||
+                      nav === navigationsObj.service ? (
+                        <Link
+                          key={nav}
+                          href={`/${nav}`}
+                          onClick={() => selectNavBar(nav)}
+                        >
+                          <span className="capitalize font-semibold text-[#002856] cursor-pointer">
+                            {dictionary?.header?.navName?.[nav]}
+                          </span>
+                        </Link>
+                      ) : (
+                        <span
+                          className="capitalize font-semibold text-[#002856] cursor-pointer"
+                          key={nav}
+                          onClick={() => selectNavBar(nav)}
+                        >
+                          {dictionary?.header?.navName?.[nav]}
+                        </span>
+                      )}
+                    </>
                   );
                 })}
               </ul>
