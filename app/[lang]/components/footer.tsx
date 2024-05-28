@@ -27,10 +27,9 @@ const FooterComponent = () => {
               />
             </Link>
             <p className="mt-3 lg:mt-5">
-              Patekpharm Pharmaceuticals is Your Reliable Distributor for
-              Essential Medications. Ensuring precision and efficiency in
-              pharmaceutical distribution for individuals and healthcare
-              providers
+              Patekpharm Pte. Ltd is Your Reliable Distributor for Essential
+              Medications. Ensuring precision and efficiency in pharmaceutical
+              distribution for individuals and healthcare providers
             </p>
           </div>
           <div className="px-3 lg:col-span-3">

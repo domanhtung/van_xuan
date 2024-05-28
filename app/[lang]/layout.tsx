@@ -37,7 +37,7 @@ export const metadata = {
   openGraph: {
     title: "Vapharco",
     description:
-      "Patekpharm Pharmaceuticals is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
+      "Patekpharm Pte. Ltd is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
     url: "https://vapharco.com",
     siteName: "Vapharco",
     images: [
