@@ -15,19 +15,19 @@ export const testimonials = [
         img: testimonial2,
         name: "Alex Cruis",
         job: "Sale manager",
-        comment: "“The Sales Team from Van Xuan provided personalized support, driving our product success with targeted strategies and effective client engagement.”"
+        comment: "“The Sales Team from Patekpharm provided personalized support, driving our product success with targeted strategies and effective client engagement.”"
     },
     {
         img: testimonial3,
         name: "Dat Le",
         job: "CEO",
-        comment: "“Reliable logistics from Van Xuan ensured our products always reached their destination on time. Thanks!”"
+        comment: "“Reliable logistics from Patekpharm ensured our products always reached their destination on time. Thanks!”"
     },
     {
         img: testimonial4,
         name: "Minh Nguyen",
         job: "Director",
-        comment: "“Thanks to Van Xuan, compliance became stress-free, freeing up our time for other priorities.”"
+        comment: "“Thanks to Patekpharm, compliance became stress-free, freeing up our time for other priorities.”"
     },
     {
         img: testimonial5,

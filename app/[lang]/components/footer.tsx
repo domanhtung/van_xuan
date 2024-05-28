@@ -27,7 +27,7 @@ const FooterComponent = () => {
               />
             </Link>
             <p className="mt-3 lg:mt-5">
-              Van Xuan Pharmaceuticals is Your Reliable Distributor for
+              Patekpharm Pharmaceuticals is Your Reliable Distributor for
               Essential Medications. Ensuring precision and efficiency in
               pharmaceutical distribution for individuals and healthcare
               providers
