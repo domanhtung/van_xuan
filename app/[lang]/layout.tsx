@@ -25,7 +25,7 @@ export default async function Root({
       </head> */}
       <body>
         <HeaderComponent dictionary={dictionary} />
-        <div className="relative xl:pt-[160px]">{children}</div>
+        <div className="relative xl:pt-[126px]">{children}</div>
         <FooterComponent />
       </body>
     </html>
