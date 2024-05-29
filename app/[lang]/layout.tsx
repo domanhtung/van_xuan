@@ -33,16 +33,16 @@ export default async function Root({
 }
 
 export const metadata = {
-  title: "Vapharco",
+  title: "Patepharm",
   openGraph: {
-    title: "Vapharco",
+    title: "Patepharm",
     description:
       "Patekpharm Pte. Ltd is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
-    url: "https://vapharco.com",
-    siteName: "Vapharco",
+    url: "https://patepharm.com",
+    siteName: "Patepharm",
     images: [
       {
-        url: "https://vapharco.com/Images/thumbnail.png",
+        url: "https://patepharm.com/Images/thumbnail.png",
       },
     ],
     locale: "en_US",

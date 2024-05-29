@@ -31,7 +31,7 @@ const AboutUsDetail = () => {
           <div className="grid md:grid-cols-2 gap-3 mt-3 md:mt-8 items-center text-[#666666]">
             <div>
               <p>
-                At Vapharco, our goal is to promote pleasure and health
+                At Patepharm, our goal is to promote pleasure and health
                 throughout the world by developing innovative and dependable
                 pharmaceutical goods.
               </p>
@@ -64,7 +64,7 @@ const AboutUsDetail = () => {
           </p>
           <div className="mt-5 md:mt-10 text-[20px] font-bold">Our Vision</div>
           <div className="md:mt-3 italic">
-            Here at Vapharco, we see a future driven by well-defined goals and
+            Here at Patepharm, we see a future driven by well-defined goals and
             constructive influence
           </div>
           <div className="grid md:grid-cols-2 gap-3 mt-5 md:mt-8 text-[#666666]">
@@ -180,14 +180,14 @@ const AboutUsDetail = () => {
               Prospects for the Future: Growth Into Southeast Asia
             </p>
             <p>
-              With an eye on 2024, Vapharco intends to aggressively grow its
+              With an eye on 2024, Patepharm intends to aggressively grow its
               market share in Southeast Asian nations like Singapore, Thailand,
               Indonesia, Laos, and Cambodia. The company's dedication to ongoing
               growth and regional expansion in the pharmaceutical industry is
               reflected in its strategic strategy.
             </p>
             <p className="mt-8">
-              By reaching these important benchmarks, Vapharco has proven its
+              By reaching these important benchmarks, Patepharm has proven its
               unwavering dedication to development, market expansion, and
               providing high-quality pharmaceutical goods and services in
               Vietnam and beyond.
