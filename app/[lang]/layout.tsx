@@ -33,16 +33,16 @@ export default async function Root({
 }
 
 export const metadata = {
-  title: "Patepharm",
+  title: "Patekpharm",
   openGraph: {
-    title: "Patepharm",
+    title: "Patekpharm",
     description:
       "Patekpharm Pte. Ltd is Your Reliable Distributor for Essential Medications. Ensuring precision and efficiency in pharmaceutical distribution for individuals and healthcare providers",
-    url: "https://patepharm.com",
-    siteName: "Patepharm",
+    url: "https://patekpharm.com",
+    siteName: "Patekpharm",
     images: [
       {
-        url: "https://patepharm.com/Images/thumbnail.png",
+        url: "https://patekpharm.com/Images/thumbnail.png",
       },
     ],
     locale: "en_US",

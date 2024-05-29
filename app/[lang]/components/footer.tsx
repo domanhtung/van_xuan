@@ -54,7 +54,7 @@ const FooterComponent = () => {
               <div className="min-w-[18px]">
                 <IconMail />
               </div>
-              info@patepharm.com
+              info@patekpharm.com
             </div>
           </div>
           <div className="px-3 lg:col-span-2">
@@ -93,7 +93,7 @@ const FooterComponent = () => {
               <IconCopyright />
               2024, All Rights Reserved by
               <span>
-                <a href="mailto:info@patepharm.com">@Patepharm</a>
+                <a href="mailto:info@patekpharm.com">@Patekpharm</a>
               </span>
             </div>
             {/* <div className="flex gap-2 items-center justify-center sm:justify-start text-white">
