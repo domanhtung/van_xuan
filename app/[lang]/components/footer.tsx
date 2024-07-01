@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Logo from "../../../public/Images/logo.png";
 import {
   IconCopyright,
   IconList,
@@ -18,10 +17,10 @@ const FooterComponent = () => {
           <div className="px-3 lg:col-span-4">
             <Link href={"/"}>
               <Image
-                src={Logo}
-                className="w-[120px] lg:w-[180px] h-[40px] lg:h-[60px]"
-                width={150}
-                height={30}
+                src={"/Images/logo.png"}
+                className="w-[80px] lg:w-[100px] h-[50px] lg:h-[60px]"
+                width={640}
+                height={426}
                 priority
                 alt="logo"
               />
@@ -41,8 +40,7 @@ const FooterComponent = () => {
               <div className="min-w-[18px]">
                 <IconLocation />
               </div>
-              Shophouse 2B, 1st floor Green Pearl Mega Mall, No 378, Minh Khai
-              Road, Hai Ba Trung District, Hanoi, Vietnam
+              11 BEACH ROAD #03-01 CRASCO BUILDING SINGAPORE (189675)
             </div>
             <div className="flex gap-1 mt-3">
               <div className="min-w-[18px]">
@@ -54,7 +52,7 @@ const FooterComponent = () => {
               <div className="min-w-[18px]">
                 <IconMail />
               </div>
-              info@vapharco.com
+              info@patekpharm.com
             </div>
           </div>
           <div className="px-3 lg:col-span-2">
@@ -93,7 +91,7 @@ const FooterComponent = () => {
               <IconCopyright />
               2024, All Rights Reserved by
               <span>
-                <a href="mailto:info@vapharco.com">@Vapharco</a>
+                <a href="mailto:info@patekpharm.com">@Patekpharm</a>
               </span>
             </div>
             {/* <div className="flex gap-2 items-center justify-center sm:justify-start text-white">

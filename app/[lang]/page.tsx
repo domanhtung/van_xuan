@@ -20,11 +20,11 @@ export default async function IndexPage() {
       <BannerComponent />
       <AboutUs />
       <ServicesComponent />
-      <NumberExpComponent />
-      <PartnerComponent />
+      {/* <NumberExpComponent />
+      <PartnerComponent /> */}
       <GalleryExhibition />
       <Testimonials />
-      <BlogNews />
+      {/* <BlogNews /> */}
       <ContactComponent />
       <SubScribeComponent />
       {/* <SimpleMap mapKey={googleMapKey} /> */}

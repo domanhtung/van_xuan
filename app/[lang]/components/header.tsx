@@ -2,8 +2,6 @@
 import Image from "next/image";
 import phoneNumber from "../../../public/Images/phone_numb.svg";
 import openTime from "../../../public/Images/open_time.svg";
-import language from "../../../public/Images/language.svg";
-import logo from "../../../public/Images/logo.png";
 import Link from "next/link";
 import { listSocial, navigations, navigationsObj } from "../constants/header";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -188,10 +186,10 @@ const HeaderComponent = ({ dictionary }: any) => {
             <div className="flex container mx-auto px-5 py-3 items-center justify-between">
               <Link href={"/"}>
                 <Image
-                  src={logo}
-                  className="w-[120px] lg:w-[150px] h-[40px] lg:h-[50px]"
-                  width={157}
-                  height={36}
+                  src={"/Images/logo.png"}
+                  className="w-[80px] lg:w-[100px] h-[50px] lg:h-[60px]"
+                  width={640}
+                  height={426}
                   priority
                   alt="logo"
                 />

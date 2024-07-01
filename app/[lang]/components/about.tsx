@@ -30,13 +30,16 @@ const AboutUs = () => {
           About Us
         </div>
         <div className="max-w-[600px] text-[24px] sm:text-[30px] xl:text-[44px] text-center md:text-left font-bold text-[#002856]">
-          Distributing Pharmaceuticals since 2005
+          Welcome to PatekPharm
         </div>
         <p className="leading-[28px] text-[#666666]">
-          We've been dedicated to distributing pharmaceuticals with precision
-          and reliability. Our longstanding commitment ensures that individuals
-          and healthcare providers alike have access to the medications they
-          need, delivered with care and efficiency.
+          A pioneering pharmaceutical trading company based in Singapore,
+          dedicated to serving the vibrant and diverse markets of Southeast
+          Asia, including Singapore, Vietnam, Thailand, Indonesia, and Malaysia.
+          Established with a vision to enhance the distribution of
+          pharmaceuticals with precision and reliability, we are committed to
+          being a trusted partner in the region's medical and pharmaceutical
+          sectors.
         </p>
         <div>
           <div className="grid md:flex 2xl:grid md:grid-cols-3 gap-3 md:gap-0 mt-3 xl:mt-6 md:justify-between">

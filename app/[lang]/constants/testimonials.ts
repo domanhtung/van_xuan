@@ -9,7 +9,7 @@ export const testimonials = [
         img: testimonial1,
         name: "Jim Morison",
         job: "Director",
-        comment: "“Thanks to PharmaBridge Solutions, we navigated complex export regulations effortlessly and expanded our market reach seamlessly.”"
+        comment: "“Thanks to PatekPharm, we navigated complex export regulations effortlessly and expanded our market reach seamlessly.”"
     },
     {
         img: testimonial2,

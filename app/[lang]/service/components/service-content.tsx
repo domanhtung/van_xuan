@@ -22,16 +22,16 @@ const ServiceContent = () => {
   return (
     <div className="xl:col-span-2 order-1 xl:order-2 leading-[28px]">
       <p className="text-[#666666]">
-        In the Vietnamese market, Vapharco Pharmaceutical Trading Company
-        Limited is a prominent importer and distributor of pharmaceuticals. In
-        addition to having a broad network that encompasses all 63 provinces and
-        cities, we also have deep industry knowledge and a strong commitment to
-        quality. Our primary goal is to provide thorough pharmaceutical business
-        development services that meet the various needs of our partners and
-        clients. We offer strategic solutions that are intended to drive growth
-        and support success in the pharmaceutical industry, whether you are a
-        pharmaceutical manufacturer looking to expand your presence in Vietnam
-        or a healthcare institution in need of a trusted drug supplier.
+        In the Singapore and Southeast Asia market, Patekpharm Pte. Ltd. is a
+        prominent importer and distributor of pharmaceuticals. In addition to
+        having a broad network, we also have deep industry knowledge and a
+        strong commitment to quality. Our primary goal is to provide thorough
+        pharmaceutical business development services that meet the various needs
+        of our partners and clients. We offer strategic solutions that are
+        intended to drive growth and support success in the pharmaceutical
+        industry, whether you are a pharmaceutical manufacturer looking to
+        expand your presence in Vietnam or a healthcare institution in need of a
+        trusted drug supplier.
       </p>
       <div id="service_1" className="pt-8 text-[20px] font-bold">
         Market Analysis and Entry Strategy
@@ -94,7 +94,7 @@ const ServiceContent = () => {
       />
       <div className="text-[#666666]">
         <p className="mt-5">
-          At Vapharco, our area of expertise is finding and assessing strategic
+          At Patekpharm, our area of expertise is finding and assessing strategic
           business partners in the pharmaceutical and healthcare sectors. Our
           all-encompassing strategy includes the following crucial elements:
         </p>
@@ -168,7 +168,7 @@ const ServiceContent = () => {
         <p className="mt-5">
           Ensuring compliance and obtaining product registration are essential
           steps towards market entry and long-term success in the constantly
-          changing world of pharmaceutical laws. At Vapharco, we provide
+          changing world of pharmaceutical laws. At Patekpharm, we provide
           all-inclusive services intended to handle regulatory mazes and
           expedite the pharmaceutical product's route to market.
         </p>
@@ -223,7 +223,7 @@ const ServiceContent = () => {
         </p>
         <p className="mt-2">
           Let us be your dependable partner as you navigate product registration
-          and regulatory compliance in the Vietnamese pharmacy business to
+          and regulatory compliance in the Southeast Asia pharmacy business to
           Unlock Your Market Potential. You may realize the full commercial
           potential of your product and succeed in regulatory compliance with
           our knowledge and committed help.
@@ -242,7 +242,7 @@ const ServiceContent = () => {
       />
       <div className="text-[#666666]">
         <p className="mt-5">
-          At Vapharco, we are experts in developing targeted advertising
+          At Patekpharm, we are experts in developing targeted advertising
           campaigns and brand-building plans that increase consumer awareness
           and stimulate demand for pharmaceuticals. The following are the main
           tasks that are included in our extensive services:
@@ -318,7 +318,7 @@ const ServiceContent = () => {
           For the pharmaceutical sector to guarantee on-time delivery, product
           availability, and effective distribution, supply chain operations and
           logistical systems must be optimized. Our area of expertise at
-          Vapharco is creating and executing strategic supply chain solutions
+          Patekpharm is creating and executing strategic supply chain solutions
           made especially for pharmaceutical goods.
         </p>
         <p className="mt-3">Important Services Provided:</p>
@@ -362,7 +362,7 @@ const ServiceContent = () => {
           </li>
         </ul>
         <p className="mt-3">
-          At Vapharco, we provide cutting-edge supply chain and logistics
+          At Patekpharm, we provide cutting-edge supply chain and logistics
           solutions for the pharmaceutical sector by fusing real-world
           experience with extensive industry knowledge. Our commitment to
           quality, adherence to regulations, and customer-focused methodology
