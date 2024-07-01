@@ -15,16 +15,18 @@ const FooterComponent = () => {
       <div className="container mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-12 py-10 sm:py-20 xl:py-[120px] text-white">
           <div className="px-3 lg:col-span-4">
-            <Link href={"/"}>
-              <Image
-                src={"/Images/logo.png"}
-                className="w-[80px] lg:w-[100px] h-[50px] lg:h-[60px]"
-                width={640}
-                height={426}
-                priority
-                alt="logo"
-              />
-            </Link>
+            <div className="flex">
+              <Link href={"/"}>
+                <Image
+                  src={"/Images/logo.png"}
+                  className="w-[80px] lg:w-[100px] h-[50px] lg:h-[60px]"
+                  width={640}
+                  height={426}
+                  priority
+                  alt="logo"
+                />
+              </Link>
+            </div>
             <p className="mt-3 lg:mt-5">
               Patekpharm Pte. Ltd is Your Reliable Distributor for Essential
               Medications. Ensuring precision and efficiency in pharmaceutical
