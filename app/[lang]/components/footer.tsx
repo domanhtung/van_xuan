@@ -44,12 +44,12 @@ const FooterComponent = () => {
               </div>
               11 BEACH ROAD #03-01 CRASCO BUILDING SINGAPORE (189675)
             </div>
-            <div className="flex gap-1 mt-3">
+            {/* <div className="flex gap-1 mt-3">
               <div className="min-w-[18px]">
                 <IconSupport />
               </div>
               024 63294103
-            </div>
+            </div> */}
             <div className="flex gap-1 mt-3">
               <div className="min-w-[18px]">
                 <IconMail />

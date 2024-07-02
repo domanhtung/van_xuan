@@ -125,7 +125,7 @@ const HeaderComponent = ({ dictionary }: any) => {
       >
         <div className="relative hidden lg:block z-[1] bg-white">
           <div className="grid md:flex justify-center md:justify-start container mx-auto py-3 px-3 lg:px-5 text-[14px] items-center">
-            <div className="hidden lg:flex md:pr-4 md:mr-4 gap-2 items-center justify-center md:justify-start md:border-r border-black border-opacity-25">
+            {/* <div className="hidden lg:flex md:pr-4 md:mr-4 gap-2 items-center justify-center md:justify-start md:border-r border-black border-opacity-25">
               <Image
                 src={phoneNumber}
                 width={16}
@@ -134,7 +134,7 @@ const HeaderComponent = ({ dictionary }: any) => {
                 alt="phone number"
               />
               (024) 63294103
-            </div>
+            </div> */}
             <div className="hidden lg:flex gap-2 items-center justify-center md:justify-start">
               <Image
                 src={openTime}
