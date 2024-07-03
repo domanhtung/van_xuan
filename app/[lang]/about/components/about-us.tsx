@@ -121,7 +121,7 @@ const AboutUsDetail = () => {
               responsibility.
             </p>
           </div>
-          <div className="mt-10 md:mt-20 text-[20px] text-center font-bold">
+          {/* <div className="mt-10 md:mt-20 text-[20px] text-center font-bold">
             <span className="text-[#FF375F]">Formation</span> & Development
             History
           </div>
@@ -174,7 +174,7 @@ const AboutUsDetail = () => {
             <div className="absolute hidden md:block w-[2px] h-full pt-5 top-0 left-1/2 -translate-x-1/2">
               <div className="w-full h-full bg-[#FF375F]" />
             </div>
-          </div>
+          </div> */}
           <div className="text-[#666666]">
             <p className="mt-10 font-bold">
               Prospects for the Future: Growth Into Southeast Asia
